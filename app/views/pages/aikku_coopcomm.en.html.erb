@@ -1,0 +1,198 @@
+<div class="text-center reveal delay-1 m-8 md:m-30 flex flex-col lg:flex-row items-center gap-6 md:gap-16">
+  <div class="flex-1 text-center lg:text-left reveal">
+    <h1 class=" text-5xl md:text-7xl text-secondary mb-8 leading-tight italic tracking-tight">
+      <%= title "Collaborate more, spend less!" %>
+    </h1>
+    <p class="text-xl lg:text-2xl text-gray-600 mb-10 leading-relaxed  text-justify ">
+      <span class=" text-secondary">Aïkku CoopComm</span>
+      is an <span class="font-semibold">inter-municipal resource-sharing platform </span>designed to 
+      meet the needs of communities of municipalities,
+      inter-municipal associations, and local authorities.
+      It supports them in optimizing and pooling
+      their human resources, investments, and technical assets within a single tool.
+    </p>
+  </div>
+  <div class="flex-1 w-full max-w-xl reveal delay-1">
+    <div class="relative group">
+      <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full blur-3xl opacity-10 group-hover:opacity-20 transition duration-1000"></div>
+      <%= image_tag "logos/CoopCommlogo.avif", 
+            class: "relative bg-white shadow-xl rounded-3xl p-12 animate-pulsing", 
+            alt: "CoopComm Logo" %>
+    </div>
+  </div>
+</div>
+</section>
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 62" preserveAspectRatio="none">
+    <path d="
+      M0,62
+      Q300,2 600,32
+      Q900,62 1200,32
+      L1200,62
+      L0,62
+      Z
+    " fill="#1f1f3d"/>
+  </svg>
+</div>
+<section id="fonctionnalités" class="w-full bg-[#1f1f3d] text-white py-24 px-6 md:px-12">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-20">
+      <h2 class="text-4xl lg:text-6xl  mb-6">
+        Everything you need
+        <span class="text-gradient">in one place</span>
+      </h2>
+      <p class="text-[#51c7fd] font-bold text-sm uppercase tracking-[0.3em]">
+        Core features
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+      <% 
+        features = [
+          { icon: "boxes", title: " Asset management", text: "Track inventory and equipment loans. Manage all usage
+        of your assets during field operations. Easily locate your equipment
+        using our interactive map.
+      " },
+          { icon: "handyman", title: " Operations", text: "A service request is submitted by a member to a local team.
+        The agent goes on-site, records the information, and the member validates the intervention.
+     " },
+          { icon: "users", title: "Agents and managers", text: " Agents have limited access to data related to their operations.
+        Managers have full access to their organization’s data.
+     " },
+          { icon: "qrcode", title: "QR code tracking", text: " For recurring operations, create a template intervention and print its QR code.
+        By scanning it, the agent directly opens the intervention without manual input.
+     " },
+          { icon: "euro", title: "Budget control", text: " A management dashboard allows members and managers
+        to track key indicators in real time.
+     " },
+          { icon: "gears", title: "Workflow", text: "  Each operation moves from one state to another through predefined actions.
+        Some actions automatically trigger notifications.
+     " },
+          { icon: "message", title: "Instant messaging", text: "  A real-time communication space allows managers to directly interact
+        with agents, with built-in moderation features.
+     " },
+          { icon: "bell", title: " Notifications and alerts", text: "Certain state changes trigger email or WhatsApp notifications
+        to keep all stakeholders informed.
+    " },
+          { icon: "robot", title: "        Intervention forecasting (AI)", text: " Based on previous operations, artificial intelligence
+        suggests upcoming interventions to plan.
+      " }
+        ]
+      %>
+      <% features.each do |f| %>
+        <div class="group p-10 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#51c7fd]/50 transition-all duration-300">
+          <div class="flex flex-row  items-center gap-2 mb-2">
+            <div class="w-14 h-14 flex items-center justify-center rounded-2xl bg-[#51c7fd]/10 group-hover:scale-110 group-hover:bg-[#51c7fd] transition-all duration-300">
+              <%= icon(f[:icon], class: "text-2xl text-[#51c7fd] group-hover:text-[#1f1f3d]") %>
+            </div>
+            <h3 class=" text-2xl  text-white group-hover:text-[#51c7fd] transition-colors"><%= f[:title] %></h3>
+          </div>
+          <p class="text-gray-400 leading-relaxed text-base">
+            <%= f[:text] %>
+          </p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="M0,0 Q300,60 600,30 Q900,0 1200,30 L1200,0 L0,0 Z" fill="#1f1f3d"/>
+  </svg>
+</div>
+<section class="flex flex-col p-10 md:p-20 md:flex-row items-center gap-16">
+  <div class="flex-1 card w-full">
+    <%= image_tag "coopcoomImage.png",
+          class: "shadow rounded-2xl",
+          alt: "CoopComm dashboard across multiple devices" %>
+  </div>
+  <div class="flex-1 order-1 lg:order-2">
+    <h3 class="text-[#51c7fd] font-black mb-4 uppercase tracking-[0.2em] text-sm">
+      Why Aïkku CoopComm?
+    </h3>
+    <h2 class="text-4xl lg:text-5xl  mb-8 leading-tight text-secondary">
+      A complete solution for your inter-municipal organization
+    </h2>
+    <p class="text-lg text-gray-600 mb-8 leading-relaxed text-justify">
+      Reduce costs, improve team efficiency, and ensure
+      <span class="font-semibold">100% French digital sovereignty</span>.
+      Our platform guarantees GDPR compliance while providing a smooth user experience
+      for all field agents.
+    </p>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <% ["Cost reduction", "GDPR compliance", "Field efficiency", "French support"].each do |item| %>
+        <li class="flex items-center gap-3 font-bold text-secondary">
+          <%= icon("cercle-check", class: "w-6 h-6 text-[#51c7fd] ") %></i>
+        <%= item %>
+      </li>
+    <% end %>
+  </ul>
+</div>
+</section>
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 62" preserveAspectRatio="none">
+    <path d="
+      M0,62
+      Q300,2 600,32
+      Q900,62 1200,32
+      L1200,62
+      L0,62
+      Z
+    " fill="#1f1f3d"/>
+  </svg>
+</div>
+<section class="text-center bg-info text-white px-8 py-16 w-full ">
+  <h2 class="text-3xl lg:text-5xl  mb-6">
+    Want to see <span class="text-gradient">Aïkku COOPCOMM</span> in action?
+  </h2>
+  <p class="max-w-xl mx-auto mb-8 leading-relaxed">
+    Our team offers solutions tailored to your needs,
+    with personalized support and technical assistance.
+  </p>
+  <%= link_to "View the demo →", "https://demo.coopcomm.fr/",
+        target: "_blank",
+        class: "btn btn-gradient shadow-sm shadow-white/40 mt-6 h-min transition-transform hover:scale-105" %>
+</section>
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="M0,0 Q300,60 600,30 Q900,0 1200,30 L1200,0 L0,0 Z" fill="#1f1f3d"/>
+  </svg>
+</div>
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 md:px-20 mb-20">
+  <div class="group border border-gray-200 rounded-3xl p-8 bg-white shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+    <div class="flex items-start gap-4">
+      <div class="bg-blue-50 p-3 rounded-xl text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+        <%= icon("github", class: "w-6 h-6 ") %>
+      </div>
+      <div>
+        <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Development</p>
+        <h3 class="text-xl font-medium mb-3">Open source code</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          Developed in France and published with full transparency on 
+          <%= link_to "GitHub",
+            "https://github.com/philippe-nougaillon/coopcomm",
+            target: "_blank",
+            class: "font-bold text-accent hover:text-secondary underline decoration-2 underline-offset-4" %>.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="group border border-gray-200 rounded-3xl p-8 bg-white shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+    <div class="flex items-start gap-4">
+      <div class="bg-blue-50 p-3 rounded-xl text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+        <%= icon("rocket", class: "w-6 h-6") %>
+      </div>
+      <div>
+        <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Support & Services</p>
+        <h3 class="text-xl font-medium mb-3">Need a specific feature?</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          Our team is here to support your specific needs.
+          <%= link_to services_path, class: "block mt-2 font-semibold text-accent hover:text-secondary transition-colors group/link" do %>
+            Explore our custom services offering →
+            <span class="block mt-2 font-semibold text-accent cursor-pointer hover:underline">
+            </span>
+          <% end %>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

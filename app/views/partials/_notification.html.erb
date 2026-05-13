@@ -1,0 +1,6 @@
+<% if notice || alert %>
+  <div  data-controller="notification" data-notification-delay-value="5000" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; background-color: #10b981; color: white; padding: 15px 25px; border-radius: 8px; box-shadow: 0 10px 15px rgba(0,0,0,0.2); font-family: sans-serif; display: flex; align-items: center;">
+    <span style="margin-right: 10px;">✅</span>
+    <%= notice || alert %>
+  </div>
+<% end %>

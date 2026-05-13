@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="aikku">
+  <head>
+    <%= display_meta_tags site: "#{ @sitename }", separator: '-', reverse: true %>
+    <%= display_meta_tags description: "AÏKKU traduit les besoins clients en une solution logicielle simple, robuste et adaptée" %>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="google-site-verification" content="sIvCFBNjrlwWZEXsghUKTNG0eircBmtKTktB7iaHH7A" />
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= render 'partials/favicon' %>
+   <!-- TAILWIND CSS -->
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <!-- JS -->
+    <%= javascript_importmap_tags  %>    
+    <%= render 'partials/gtag' %>
+  </head>
+  <body class="flex flex-col justify-between min-h-screen">
+    <%= render partial: "partials/navbar" %>
+    <%= render partial: "partials/notification" %>
+    <main class="mb-auto">
+      <%= yield %>
+    </main>
+    <%= render partial: "partials/footer" %>
+  </body>
+</html>

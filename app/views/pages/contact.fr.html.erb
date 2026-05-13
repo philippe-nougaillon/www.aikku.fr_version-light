@@ -1,0 +1,65 @@
+<%= form_tag do %>
+  <div class="relative text-center w-full min-h-[200px] md:min-h-[300px] text-neutral-content p-10 lg:p-30 ">
+    <%= image_tag "background/contact.avif",
+  class: "absolute inset-0 w-full h-full object-cover bg-cover bg-center",
+  alt: "image de fond avec deux mains qui se serrent",
+  fetchpriority: "high",
+  loading: "eager" %>
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative z-10 reveal delay-1 ">
+      <h1 class="pt-6 md:pt-0 text-4xl lg:text-6xl ">
+        Nous <span class="text-gradient">contacter</span>
+      </h1>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+  </div>
+  <div class="flex flex-col md:flex-row gap-12 p-4 md:p-20 reveal delay-2">
+    <div class=" p-8 flex flex-col flex-1 items-center text-center">
+      <h2 class=" text-2xl text-accent mb-6">
+        Un projet ? Une question ? Parlons-en.
+      </h2>
+      <p class="text-gray-600 leading-relaxed">
+        Venez prendre un cafe ou un the à l'agence,
+        <br>
+        nous serons ravis de vous accuellir à l'adresse suivante :    
+        <br>
+        <br>
+        Aïkku (SAS)<br>
+        Tour Ariane - La Défense<br>
+        5, Place de la Pyramide<br>
+        92800 Puteaux – France
+      </p>
+      <div class="flex gap-6 mt-6">
+        <%= mail_to "contact@aikku.eu", class: "hover:scale-110 transition", aria: { label: "Envoyer un e-mail à Aikku" } do %>
+          <%= icon("enveloppe", class: "w-6 h-6 text-accent", aria: { hidden: true }) %>
+        <% end %>
+        <%= link_to "https://www.linkedin.com/company/aikku-sas",
+            target: "_blank",
+            rel: "noopener",
+            class: "hover:scale-110 transition",
+            aria: { label: "Voir la page LinkedIn d’Aikku (nouvel onglet)" } do %>
+          <%= icon("linkedin", class: "w-6 h-6 text-accent", aria: { hidden: true }) %>
+        <% end %>
+      </div>
+    </div>
+    <div class="bg-white flex-1 p-10 rounded-2xl shadow-lg">
+      <h2 class=" text-2xl text-accent mb-6">
+        Envoyez-nous un message
+      </h2>
+      <%= email_field_tag :email, params[:email], class:"input input-bordered rounded-lg w-full", required: true, placeholder: "Entrez une adresse email valide" %>
+      <%= text_field_tag :nom, params[:nom], class:"input input-bordered rounded-lg w-full mt-4", required: true, placeholder: 'Entrez votre nom' %>
+      <%= text_area_tag :contenu, params[:contenu], class:"textarea textarea-bordered rounded-lg w-full mt-4", rows: 4, required: true, placeholder: "Votre message" %>
+      <div class="flex justify-center">
+        <%= button_tag "Envoyer le message",
+          type: "submit",
+          class: "btn text-lg btn-gradient  hover:text-white mt-12 shadow-lg ",
+          'data-turbo': false %>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<% end %>

@@ -1,0 +1,319 @@
+<div class="text-center reveal delay-1 m-8 md:m-30 flex flex-col lg:flex-row items-center gap-6 md:gap-16">
+  <div class="flex-1 text-center lg:text-left reveal">
+    <h1 class=" text-5xl md:text-7xl text-secondary mb-8 leading-tight italic tracking-tight">
+      <%= title "Vos données métier, partout avec vous." %>
+    </h1>
+    <p class="text-xl lg:text-2xl text-gray-600 mb-10 leading-relaxed  text-justify ">
+      <span class="text-secondary">Aïkku ACCESS</span> est un 
+      <span class="font-semibold">gestionnaire d'informations NO-CODE</span>
+      qui permet de structurer 
+      vos données métiers. Vous pouvez créer des collections 
+      personnalisées (clients, interventions, techniciens, frais, 
+      etc.), établir des liens entre elles pour refléter vos processus réels,
+      et partager ces informations en ligne avec vos équipes pour un 
+      travail collaboratif fluide.
+    </p>
+  </div>
+  <div class="flex-1 w-full max-w-xl reveal delay-1">
+    <div class="relative group">
+      <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full blur-xl opacity-10 group-hover:opacity-20 transition duration-1000"></div>
+      <%= image_tag "logos/aikkuaccess.avif", 
+      width: 1200,
+      height: 900,
+      loading: "lazy",
+      alt: "Aïkku ACCESS Logo",
+      class: "relative bg-white shadow-xl rounded-3xl animate-pulsing" %>
+    </div>
+  </div>
+</div>
+</section>
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 62" preserveAspectRatio="none">
+    <path d="
+      M0,62
+      Q300,2 600,32
+      Q900,62 1200,32
+      L1200,62
+      L0,62
+      Z
+    " fill="#1f1f3d"/>
+  </svg>
+</div>
+<section id="cas-usage" class="w-full bg-[#1f1f3d] text-white py-24 px-6 md:px-12">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-20">
+      <h2 class="text-4xl lg:text-6xl  mb-6">
+        Quatre <span class="text-gradient">cas d’usage clés</span>
+      </h2>
+      <p class="text-[#51c7fd] font-bold text-sm uppercase tracking-[0.3em]">
+        Solutions sur mesure
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="group p-10 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#51c7fd]/50 transition-all duration-300">
+        <div class="flex flex-row items-center gap-4 mb-4">
+          <div class="w-14 h-14 flex items-center justify-center rounded-2xl bg-[#51c7fd]/10 group-hover:scale-110 group-hover:bg-[#51c7fd] transition-all duration-300">
+            <%= icon("database", class: "w-8 h-8 text-[#51c7fd] group-hover:text-[#1f1f3d] text-current") %>
+          </div>
+          <h3 class="text-2xl  text-white group-hover:text-[#51c7fd] transition-colors">
+            Gestion des données
+          </h3>
+        </div>
+        <p class="text-gray-400 leading-relaxed text-base">
+          Centralisez et gérez toutes vos données terrain depuis votre smartphone. Photos, PDF, GPS et données météo sont collectés automatiquement, sans effort.
+        </p>
+      </div>
+      <div class="group p-10 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#51c7fd]/50 transition-all duration-300">
+        <div class="flex flex-row items-center gap-4 mb-4">
+          <div class="w-14 h-14 flex items-center justify-center rounded-2xl bg-[#51c7fd]/10 group-hover:scale-110 group-hover:bg-[#51c7fd] transition-all duration-300">
+            <%= icon("wrench", class: "w-8 h-8 text-[#51c7fd] group-hover:text-[#1f1f3d] text-current") %>
+          </div>
+          <h3 class="text-2xl text-white group-hover:text-[#51c7fd] transition-colors">
+            Gestion des opérations terrain
+          </h3>
+        </div>
+        <p class="text-gray-400 leading-relaxed text-base">
+          Créez et structurez vos objets métiers (clients, interventions, techniciens, frais), reliez-les entre eux et partagez-les facilement avec vos équipes.
+        </p>
+      </div>
+      <div class="group p-10 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#51c7fd]/50 transition-all duration-300">
+        <div class="flex flex-row items-center gap-4 mb-4">
+          <div class="w-14 h-14 flex items-center justify-center rounded-2xl bg-[#51c7fd]/10 group-hover:scale-110 group-hover:bg-[#51c7fd] transition-all duration-300">
+            <%= icon("follow", class: "w-8 h-8 text-[#51c7fd] group-hover:text-[#1f1f3d] text-current") %>
+          </div>
+          <h3 class="text-2xl  text-white group-hover:text-[#51c7fd] transition-colors">
+            Gestion de projet
+          </h3>
+        </div>
+        <p class="text-gray-400 leading-relaxed text-base">
+          Suivez l’avancement de vos projets en temps réel, recevez des alertes sur les changements importants et visualisez vos échéances via une vue calendrier claire.
+        </p>
+      </div>
+      <div class="group p-10 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#51c7fd]/50 transition-all duration-300">
+        <div class="flex flex-row items-center gap-4 mb-4">
+          <div class="w-14 h-14 flex items-center justify-center rounded-2xl bg-[#51c7fd]/10 group-hover:scale-110 group-hover:bg-[#51c7fd] transition-all duration-300">
+            <%= icon("network", class: "w-8 h-8 text-[#51c7fd] group-hover:text-[#1f1f3d] text-current") %>
+          </div>
+          <h3 class="text-2xl  text-white group-hover:text-[#51c7fd] transition-colors">
+            Assistant IA intégré
+          </h3>
+        </div>
+        <p class="text-gray-400 leading-relaxed text-base">
+          Posez vos questions directement sur vos données et obtenez des réponses actionnables instantanément. 
+          <span class="italic text-[#51c7fd]/80 block mt-2">"Génère les 3 prochaines interventions prioritaires."</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="
+      M0,0
+      Q300,60 600,30
+      Q900,0 1200,30
+      L1200,0
+      L0,0
+      Z
+    " fill="#1f1f3d"/>
+  </svg>
+</div>
+<section class="w-full py-24 px-6 lg:px-20 bg-slate-50">
+  <div class="text-center mb-16">
+    <h2 class="text-accent font-bold text-xl">
+      FONCTIONNALITÉS PRINCIPALES </h2>
+    <h3 class="text-3xl lg:text-5xl  mt-4">
+      Une plateforme, <span class="text-gradient">toutes vos opérations</span>
+    </h3>
+  </div>
+  <div class="grid lg:grid-cols-2 gap-10 items-center">
+    <div class="space-y-8">
+      <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
+        <%= icon("list", class: "w-6 h-6  mt-1 text-accent shrink-0") %>
+        <div>
+          <h3 class="text-xl ">Collections d’objets</h3>
+          <p class="text-gray-600">
+            Créez vos propres structures de données sans code :
+            texte, nombres, photos, PDF…
+          </p>
+        </div>
+      </div>
+      <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
+        <%= icon("link", class: "w-6 h-6 text-accent mt-1  shrink-0") %>
+        <div>
+          <h3 class="text-xl ">Relations entre données</h3>
+          <p class="text-gray-600">
+            Connectez vos entités : Clients, Interventions,
+            Techniciens et Frais.
+          </p>
+        </div>
+      </div>
+      <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
+        <%= icon("userscollab", class: "w-6 h-6 text-accent mt-1  shrink-0") %>
+        <div>
+          <h3 class="text-xl ">Collaboration en temps réel</h3>
+          <p class="text-gray-600">
+            Partagez et synchronisez vos données avec vos équipes,
+            sur tous les appareils.
+          </p>
+        </div>
+      </div>
+      <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
+        <%= icon("chart", class: "w-6 h-6 text-accent mt-1 shrink-0") %>
+        <div>
+          <h3 class="text-xl ">Visualisation & analytics</h3>
+          <p class="text-gray-600">
+            Transformez vos données en graphiques clairs
+            pour une meilleure prise de décision.
+          </p>
+        </div>
+      </div>
+      <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
+        <%= icon("location", class: "w-6 h-6 text-accent mt-1  shrink-0") %>
+        <div>
+          <h3 class="text-xl ">Données terrain automatiques</h3>
+          <p class="text-gray-600">
+            GPS, météo et contexte collectés automatiquement
+            lors des interventions.
+          </p>
+        </div>
+      </div>
+      <div class="flex gap-4 rounded-xl p-4 border border-gray/30">
+        <%= icon("calendar", class: "w-6 h-6 text-accent mt-1  shrink-0") %>
+        <div>
+          <h3 class="text-xl ">Vue calendrier</h3>
+          <p class="text-gray-600">
+            Planifiez et suivez vos échéances avec synchronisation
+            Google, Outlook et Apple.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="carousel" class="w-full carousel min-w-16 sm:w-3/4 mx-auto shadow-lg rounded-xl" data-turbo="false">
+      <div id="slide1" class="carousel-item relative w-full">
+        <%= image_tag "aikku_access/Aikku Access page login.png",
+         width: 1200,
+      height: 900,
+      alt: "Aïkku ACCESS Login Page",
+      loading: "lazy"  %>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide5" class="btn btn-circle btn-primary">❮</a>
+          <a href="#slide2" class="btn btn-circle btn-primary">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <%= image_tag "aikku_access/Aikku Access page Objets.png",
+         width: 1200,
+      height: 900,
+      alt: "Aïkku ACCESS Objects Page",
+      loading: "lazy"  %>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide1" class="btn btn-circle btn-primary">❮</a>
+          <a href="#slide3" class="btn btn-circle btn-primary">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <%= image_tag "aikku_access/Aikku Access page Data.png",
+         width: 1200,
+      height: 900,
+      alt: "Aïkku ACCESS Data Page",
+      loading: "lazy" %>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide2" class="btn btn-circle btn-primary">❮</a>
+          <a href="#slide4" class="btn btn-circle btn-primary">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <%= image_tag "aikku_access/Aikku Access page Dashboard.png",
+         width: 1200,
+      height: 900,
+      alt: "Aïkku ACCESS Dashboard Page",
+      loading: "lazy"  %>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide3" class="btn btn-circle btn-primary">❮</a>
+          <a href="#slide5" class="btn btn-circle btn-primary">❯</a>
+        </div>
+      </div>
+      <div id="slide5" class="carousel-item relative w-full">
+        <%= image_tag "aikku_access/Aikku Access page AI.png",
+         width: 1200,
+      height: 900,
+      alt: "Aïkku ACCESS AI Assistant Page",
+      loading: "lazy"  %>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide4" class="btn btn-circle btn-primary">❮</a>
+          <a href="#slide1" class="btn btn-circle btn-primary">❯</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 62" preserveAspectRatio="none">
+    <path d="
+      M0,62
+      Q300,2 600,32
+      Q900,62 1200,32
+      L1200,62
+      L0,62
+      Z
+    " fill="#1f1f3d"/>
+  </svg>
+</div>
+<section class="text-center bg-info text-white px-8 py-16 w-full ">
+  <h2 class="text-3xl lg:text-5xl  mb-6">
+    Envie de voir <span class="text-gradient">Aïkku ACCESS</span> en action ?
+  </h2>
+  <p class="max-w-xl mx-auto mb-8 leading-relaxed">
+    Notre équipe vous propose des solutions adaptées à vos besoins,
+    avec un accompagnement personnalisé et une assistance technique.
+  </p>
+  <%= link_to "Voir la démonstration →", "https://access.aikku.eu/fr",
+        target: "_blank",
+        class: "btn btn-gradient shadow-sm shadow-white/40 mt-6 h-min transition-transform hover:scale-105" %>
+</section>
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="M0,0 Q300,60 600,30 Q900,0 1200,30 L1200,0 L0,0 Z" fill="#1f1f3d"/>
+  </svg>
+</div>
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 pt-20 md:px-20 mb-20">
+  <div class="group border border-gray-200 rounded-3xl p-8 bg-white shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+    <div class="flex items-start gap-4">
+      <div class="bg-blue-50 p-3 rounded-xl text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+        <%= icon("github", class: "w-6 h-6 ") %>
+      </div>
+      <div>
+        <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Développement</p>
+        <h3 class="text-xl font-medium  mb-3">Code source ouvert</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          Développé en France et publié en toute transparence sur 
+          <%= link_to "GitHub",
+            "https://github.com/philippe-nougaillon/aikku-access",
+            target: "_blank",
+            class: "font-bold text-accent hover:text-secondary underline decoration-2 underline-offset-4" %>.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="group border border-gray-200 rounded-3xl p-8 bg-white shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+    <div class="flex items-start gap-4">
+      <div class="bg-blue-50 p-3 rounded-xl text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+        <%= icon("rocket", class: "w-6 h-6") %>
+      </div>
+      <div>
+        <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Support & Services</p>
+        <h3 class="text-xl  font-medium mb-3">Besoin d'une fonctionnalité ?</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          Notre équipe est à votre écoute pour des besoins spécifiques.
+          <%= link_to services_path, class: "block mt-2 font-semibold text-accent hover:text-secondary transition-colors group/link" do %>
+            Consultez notre offre de services personnalisés →
+            <span class="block mt-2 font-semibold text-accent cursor-pointer hover:underline">
+            </span>
+          <% end %>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
