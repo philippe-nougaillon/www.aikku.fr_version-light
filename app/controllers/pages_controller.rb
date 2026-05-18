@@ -36,7 +36,9 @@ class PagesController < ApplicationController
     ContactMailer.submitted(message).deliver_now
     
     # On ajoute status: :see_other pour aider Turbo
-    redirect_to root_path, notice: "Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs délais.", status: :see_other
+    redirect_to root_path,
+    notice: I18n.t("contact.message_sent"),
+    status: :see_other
   end
 
 end

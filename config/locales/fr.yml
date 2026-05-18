@@ -269,5 +269,5 @@ fr:
     mentions_légales:
       title: Mentions Légales
   contact:
-    message_sent: "Votre message a bien été envoyé."
+    message_sent: "On vous répond bientôt !"
     recaptcha_problem: "Problème avec reCAPTCHA, merci de réessayer"

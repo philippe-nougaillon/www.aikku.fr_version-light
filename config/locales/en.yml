@@ -31,5 +31,5 @@
 
 en:
   contact:
-    message_sent: "Your message has been sent."
+    message_sent: "We will get back to you shortly!"
     recaptcha_problem: "Problem with reCAPTCHA, please try again "

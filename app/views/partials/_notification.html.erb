@@ -1,6 +1,35 @@
 <% if notice || alert %>
-  <div  data-controller="notification" data-notification-delay-value="5000" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; background-color: #10b981; color: white; padding: 15px 25px; border-radius: 8px; box-shadow: 0 10px 15px rgba(0,0,0,0.2); font-family: sans-serif; display: flex; align-items: center;">
-    <span style="margin-right: 10px;">✅</span>
-    <%= notice || alert %>
+  <div data-controller="notification" data-notification-delay-value="5" style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: #10b981;
+    color: white;
+    padding: 14px 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    max-width: 360px;
+    animation: slideUp 0.7s ease forwards;
+  ">
+    <span>✅ <%= notice || alert %></span>
+    <span onclick="this.closest('[data-controller]').remove()" style="
+      cursor: pointer;
+      font-size: 16px;
+      opacity: 0.7;
+      padding-left: 20px;
+    ">✕</span>
   </div>
+
+  <style>
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 <% end %>

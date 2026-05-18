@@ -25,8 +25,9 @@ module Portfolio2
     # config.eager_load_paths << Rails.root.join("extras")
      
     # Configuración de zona horaria e idioma
-    config.time_zone = "Paris"
     config.i18n.default_locale = :fr
+    config.i18n.available_locales = [:fr, :en]
+    config.time_zone = "Paris"
 
   end
 end
