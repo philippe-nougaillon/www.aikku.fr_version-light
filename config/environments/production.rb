@@ -78,6 +78,17 @@ Rails.application.configure do
   # Only use :id for inspections in production.
   config.active_record.attributes_for_inspect = [ :id ]
 
+
+  ActionMailer::Base.delivery_method = :mailgun
+    config.action_mailer.mailgun_settings = {
+      api_key: ENV["MAILGUN_API_KEY"],
+      domain: ENV["MAILGUN_DOMAIN"],
+      api_host: "api.eu.mailgun.net" # Uncomment this line for EU region domains
+    }
+
+    config.action_mailer.default_url_options = {host: "www.aikku.eu", protocol: "https"}
+  end
+
   # Enable DNS rebinding protection and other `Host` header attacks.
   # config.hosts = [
   #   "example.com",     # Allow requests from example.com
