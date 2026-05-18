@@ -87,7 +87,7 @@ Rails.application.configure do
     }
 
     config.action_mailer.default_url_options = {host: "www.aikku.eu", protocol: "https"}
-  end
+  
 
   # Enable DNS rebinding protection and other `Host` header attacks.
   # config.hosts = [
