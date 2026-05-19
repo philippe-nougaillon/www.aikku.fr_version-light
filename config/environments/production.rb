@@ -78,6 +78,9 @@ Rails.application.configure do
   # Only use :id for inspections in production.
   config.active_record.attributes_for_inspect = [ :id ]
 
+  config.public_file_server.headers = {
+  "Cache-Control" => "public, max-age=31536000, immutable"
+}
 
   ActionMailer::Base.delivery_method = :mailgun
     config.action_mailer.mailgun_settings = {
