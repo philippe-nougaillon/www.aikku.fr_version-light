@@ -8,9 +8,14 @@ export default class extends Controller {
   }
 
   hide() {
+  this.element.addEventListener("transitionend", () => {
+    this.element.remove()
+  })
+
+  requestAnimationFrame(() => {
     this.element.style.transition = "opacity 1.5s ease, transform 1.5s ease"
     this.element.style.opacity = "0"
     this.element.style.transform = "translateY(30px)"
-    setTimeout(() => this.element.remove(), 1500)
-  }
+  })
+}
 }

@@ -172,30 +172,43 @@
   <h2 class="text-center text-3xl lg:text-5xl  mb-12 ">
     Ils nous font <span class="text-gradient">confiance</span>
   </h2>
-  <div class="flex flex-wrap justify-center items-center gap-8 ">
-    <div class="w-64 h-64 rounded flex items-center">
+   <div class="flex flex-wrap justify-center items-center gap-10 ">
+    <div class="w-48 h-48 flex items-center justify-center">
       <%= link_to "https://www.madmoselle.com", target: "_blank" do %>
-        <%= image_tag "logos/madmoselle.avif", class:"mx-auto p-8", alt: 'Mad & Moselle logo' %>
+        <%= image_tag "logos/madmoselle.avif",
+            class: "w-44 h-44 object-contain",
+            width: 64,
+            height: 64,
+            alt: "Mad & Moselle logo" %>
       <% end %>
     </div>
-    <div class="w-64 h-64 rounded flex items-center">
+    <div class="w-48 h-48 flex items-center justify-center">
       <%= link_to "https://www.grohe.com", target: "_blank" do %>
-        <%= image_tag "logos/grohe.avif", class:"mx-auto p-8", alt: 'GROHE logo' %>
+        <%= image_tag "logos/grohe.avif", 
+        class: "w-52 h-40 object-contain",
+        width: 64,
+        height: 64, alt: 'GROHE logo' %>
       <% end %>
     </div>
-    <div class="w-64 h-64 rounded flex items-center">
+    <div class="w-48 h-48 flex items-center justify-center">
       <%= link_to "https://www.iae-paris.com", target: "_blank" do %>
-        <%= image_tag "logos/iaelogo.avif", class:"mx-auto p-8", alt: 'IAE Paris-Sorbonne logo' %>
+        <%= image_tag "logos/iaelogo.avif", class: "w-64 h-48 object-contain",
+        width: 64,
+        height: 64, alt: 'IAE Paris-Sorbonne logo' %>
       <% end %>
     </div>
-    <div class="w-64 h-64 rounded flex items-center">
+    <div class="w-48 h-48 flex items-center justify-center">
       <%= link_to "https://www.fnaut.fr/", target: "_blank" do %>
-        <%= image_tag "logos/fnaut.avif", class:"mx-auto p-8", alt: 'Logo FNAUT' %>
+        <%= image_tag "logos/fnaut.avif", class: "w-52 h-32 object-contain",
+        width: 64,
+        height: 64, alt: 'Logo FNAUT' %>
       <% end %>
     </div>
-    <div class="w-64 h-64 rounded flex items-center">
+    <div class="w-56 h-56 flex items-center justify-center">
       <%= link_to "https://www.infogene.fr", target: "_blank" do %>
-        <%= image_tag "logos/infogene.avif", class:"mx-auto p-8 rounded", alt: 'Infogene logo' %>
+        <%= image_tag "logos/infogene.avif", class: "w-64 h-36 object-contain",
+        width: 64,
+        height: 64, alt: 'Infogene logo' %>
       <% end %>
     </div>
   </div>
