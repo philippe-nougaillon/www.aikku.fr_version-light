@@ -83,5 +83,5 @@ jobs:
       - name: Run tests
         env:
           RAILS_ENV: test
-        # El flag --allow-empty evita que falle si la carpeta de test está vacía
-        run: bin/rails test --allow-empty
+        # Corregido: quitamos el flag inválido
+        run: bin/rails test
