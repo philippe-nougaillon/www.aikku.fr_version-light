@@ -75,4 +75,6 @@ gem "meta-tags"
 
 gem "mailgun-ruby"
 
+gem "sitemap_generator"
+
 
