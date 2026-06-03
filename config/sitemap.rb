@@ -22,6 +22,6 @@ SitemapGenerator::Sitemap.create do
   add 'en/contact' 
   add 'fr/contact'
 
-  add 'fr/mentions_légales'
-  add 'en/mentions_légales'
+  add 'fr/mentions_l%C3%A9gales'
+  add 'en/mentions_l%C3%A9gales'
 end
