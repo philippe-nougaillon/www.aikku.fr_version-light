@@ -1,27 +1,30 @@
 # frozen_string_literal: true
 
 # Set the host name for URL creation
-SitemapGenerator::Sitemap.default_host = "https://www.aikku.eu/"
+SitemapGenerator::Sitemap.default_host = "https://www.aikku.eu"
 SitemapGenerator::Sitemap.compress = false
 SitemapGenerator::Sitemap.create do
-  add 'fr/aikku_plann'
-  add 'en/aikku_plann'
+  add root_path(locale: :fr)
+  add root_path(locale: :en)
 
-  add 'fr/aikku_coopcomm'
-  add 'en/aikku_coopcomm'
+  add aikku_plann_path(locale: :fr)
+  add aikku_plann_path(locale: :en)
 
-  add 'fr/aikku_access'
-  add 'en/aikku_access'
+  add aikku_coopcomm_path(locale: :fr)
+  add aikku_coopcomm_path(locale: :en)
 
-  add 'fr/services'
-  add 'en/services'
+  add aikku_access_path(locale: :fr)
+  add aikku_access_path(locale: :en)
 
-  add 'fr/qui_sommes_nous'
-  add 'en/qui_sommes_nous'
+  add services_path(locale: :fr)
+  add services_path(locale: :en)
 
-  add 'en/contact' 
-  add 'fr/contact'
+  add qui_sommes_nous_path(locale: :fr)
+  add qui_sommes_nous_path(locale: :en)
 
-  add 'fr/mentions_légales'
-  add 'en/mentions_légales'
+  add contact_path(locale: :fr)
+  add contact_path(locale: :en)
+
+  add mentions_legales_path(locale: :fr)
+  add mentions_legales_path(locale: :en)
 end
