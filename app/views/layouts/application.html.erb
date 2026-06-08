@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="aikku">
+<html lang="<%= I18n.locale %>" data-theme="aikku">
   <head>
-    <%= display_meta_tags site: "#{ @sitename }", separator: '-', reverse: true %>
+    <%= display_meta_tags site: @sitename, separator: '-', reverse: true %>
     <%= display_meta_tags description: "AÏKKU traduit les besoins clients en une solution logicielle simple, robuste et adaptée" %>
+    <%# Canonical siempre correcto %>
+    <link rel="canonical" href="<%= request.original_url %>">
+    <%# URLs base por idioma (más seguro que sub()) %>
+    <% fr_url = url_for(locale: :fr, only_path: false) %>
+    <% en_url = url_for(locale: :en, only_path: false) %>
+<% if request.path == "/" %>
+      <link rel="alternate" hreflang="fr" href="https://www.aikku.eu/">
+      <link rel="alternate" hreflang="en" href="https://www.aikku.eu/en">
+      <link rel="alternate" hreflang="x-default" href="https://www.aikku.eu/">
+    <% else %>
+      <link rel="alternate" hreflang="fr" href="<%= fr_url %>">
+      <link rel="alternate" hreflang="en" href="<%= en_url %>">
+    <% end %>
+    <%# Importante: self-referencing hreflang (buena práctica SEO) %>
+    <link rel="alternate" hreflang="x-default" href="https://www.aikku.eu/">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="google-site-verification" content="sIvCFBNjrlwWZEXsghUKTNG0eircBmtKTktB7iaHH7A" />
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= render 'partials/favicon' %>
-   <!-- TAILWIND CSS -->
     <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
-    <!-- JS -->
-    <%= javascript_importmap_tags  %>    
+    <%= javascript_importmap_tags %>
     <%= render 'partials/gtag' %>
   </head>
   <body class="flex flex-col justify-between min-h-screen">

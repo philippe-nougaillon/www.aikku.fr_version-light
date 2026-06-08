@@ -35,4 +35,9 @@ class ApplicationController < ActionController::Base
 
     I18n.available_locales.include?(browser_locale) ? browser_locale : I18n.default_locale
   end
+
+  def default_url_options
+      { locale: I18n.locale }
+  end
+
 end
