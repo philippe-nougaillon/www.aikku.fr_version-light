@@ -13,8 +13,7 @@ Rails.application.routes.draw do
       get :services, to: "pages#services"
       get :contact, to: "pages#contact"
       post :contact, to: "pages#contact_submit"
-      get :mentions_légales, to: "pages#mentions_légales", as: :mentions_legales
-      
+      get 'mentions-legales', to: 'pages#mentions_legales', as: 'mentions_legales'      
     end
 
     root "pages#home"
