@@ -12,7 +12,7 @@ class PagesController < ApplicationController
   def aikku_coopcomm
   end
   
-  def aikku_access
+  def aikku_ia
   end
 
   def services

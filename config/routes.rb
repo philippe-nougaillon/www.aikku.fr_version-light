@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
     controller :pages do
       get :home, to: "pages#home"
-      get :aikku_access, to: "pages#aikku_access"
+      get :aikku_ia, to: "pages#aikku_ia"
       get :aikku_plann, to: "pages#aikku_plann"
       get :aikku_coopcomm, to: "pages#aikku_coopcomm"
       get :qui_sommes_nous, to: "pages#qui_sommes_nous"
