@@ -1,6 +1,8 @@
 
 Rails.application.routes.draw do
 
+  get "/planning", to: redirect("/fr/aikku_plann")
+
   scope "(:locale)", locale: /en|fr/ do
 
     controller :pages do
