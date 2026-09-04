@@ -1,7 +1,7 @@
 <%= navbar_item 'home', root_path, 'Accueil' %>
 <li>
   <details>
-    <summary class="hover:underline hover:underline-offset-8 hover:text-primary hover:font-semibold <%= 'underline underline-offset-8 text-primary font-semibold' if ['logiciels', 'aikku_plann', 'aikku_coopcom', 'aikku_pharmadoc_analyzer', 'aikku_sign', 'aikku_projects', 'prestofacto', 'talea'].include?(params[:action]) %>">Solutions</summary>
+    <summary class="hover:underline hover:underline-offset-8 hover:text-primary hover:font-semibold <%= 'underline underline-offset-8 text-primary font-semibold' if ['logiciels', 'aikku_plann', 'aikku_coopcom', 'aikku_ia', 'aikku_sign', 'aikku_projects', 'prestofacto', 'talea'].include?(params[:action]) %>">Solutions</summary>
     <ul class="bg-base-100 rounded-t-none p-2 lg:w-min end-0">
       <li>
         <%= link_to "Vous êtes un établissement d'enseignement supérieur ?", aikku_plann_path, class: "hover:underline hover:underline-offset-8 hover:text-primary hover:font-semibold lg:whitespace-nowrap #{'underline underline-offset-8 text-primary font-semibold' if params[:action] == 'aikku_plann' }" %>
@@ -10,7 +10,7 @@
         <%= link_to "Vous êtes une communauté de communes, un EPCI ?", aikku_coopcomm_path, class: "hover:underline hover:underline-offset-8 hover:text-primary hover:font-semibold lg:whitespace-nowrap #{'underline underline-offset-8 text-primary font-semibold' if params[:action] == 'aikku_coopcomm' }" %>
       </li>
       <li>
-        <%= link_to "Vous êtes une entreprise pharmaceutique ?", aikku_pharmadoc_analyzer_path, class: "hover:underline hover:underline-offset-8 hover:text-primary hover:font-semibold lg:whitespace-nowrap #{'underline underline-offset-8 text-primary font-semibold' if params[:action] == 'aikku_pharmadoc_analyzer' }" %>
+        <%= link_to "Vous êtes une entreprise pharmaceutique ?", aikku_ia_path, class: "hover:underline hover:underline-offset-8 hover:text-primary hover:font-semibold lg:whitespace-nowrap #{'underline underline-offset-8 text-primary font-semibold' if params[:action] == 'aikku_ia' }" %>
       </li>
     </ul>
   </details>

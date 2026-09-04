@@ -13,8 +13,8 @@ SitemapGenerator::Sitemap.create do
   add aikku_coopcomm_path(locale: :fr)
   add aikku_coopcomm_path(locale: :en)
 
-  add aikku_pharmadoc_analyzer_path(locale: :fr)
-  add aikku_pharmadoc_analyzer_path(locale: :en)
+  add aikku_ia_path(locale: :fr)
+  add aikku_ia_path(locale: :en)
 
   add services_path(locale: :fr)
   add services_path(locale: :en)
