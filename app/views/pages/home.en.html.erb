@@ -53,7 +53,38 @@
   <h2 class="text-3xl lg:text-5xl text-center  mb-12">
     Our <span class="text-gradient">key sectors</span></h2>
   <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-16">
-    <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
+    
+ <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
+    <figure>
+      <%= image_tag(
+          "pharmadoc/pharma.avif",
+          class: "w-full h-48 object-cover",
+          alt: "Pharmaceutical industry",
+          loading: "lazy",
+          width: 800,
+          height: 450,
+          
+          sizes: "(max-width: 768px) 100vw, 33vw"
+        ) %>
+    </figure>
+    <div class="card-body text-black flex flex-col flex-grow">
+      <h2 class="card-title mb-4">
+        Pharmaceutical Industry </h2>
+      <p class="flex-grow">
+        Optimize document management and regulatory compliance for your clinical studies with integrated AI</p>
+    </p>
+    <div class="card-actions mt-6">
+      <%= link_to(
+            'Learn more about Aïkku Pharmadoc Analyzer',
+            aikku_ia_path,
+            class: 'btn btn-sm btn-gradient w-full shadow h-min'
+          ) %>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
       <figure>
         <%= image_tag(
           "misc/students.avif",
@@ -80,6 +111,7 @@
         </div>
       </div>
     </div>
+
     <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
       <figure>
         <%= image_tag(
@@ -93,48 +125,26 @@
           sizes: "(max-width: 768px) 100vw, 33vw"
         ) %>
       </figure>
-      <div class="card-body text-black flex flex-col flex-grow">
-        <h2 class="card-title mb-4">
-          Local authorities </h2>
-        <p class="flex-grow">
-          Effortlessly manage cooperation and resource sharing within your inter-municipal structure (EPCI)</p>
-      </p>
-      <div class="card-actions mt-6">
-        <%= link_to(
-            'Learn more about Aikku COOPCOMM',
-            aikku_coopcomm_path,
-            class: 'btn btn-sm btn-gradient w-full shadow h-min'
-          ) %>
-      </div>
+        <div class="card-body text-black flex flex-col flex-grow">
+            <h2 class="card-title mb-4">
+              Local authorities </h2>
+            <p class="flex-grow">
+              Effortlessly manage cooperation and resource sharing within your inter-municipal structure (EPCI)</p>
+          </p>
+          <div class="card-actions mt-6">
+            <%= link_to(
+                'Learn more about Aikku COOPCOMM',
+                aikku_coopcomm_path,
+                class: 'btn btn-sm btn-gradient w-full shadow h-min'
+              ) %>
+          </div>
+        </div>
     </div>
-  </div>
-  <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
-    <figure>
-      <%= image_tag(
-          "pharmadoc/pharma.avif",
-          class: "w-full h-48 object-cover",
-          alt: "Pharmaceutical industry",
-          loading: "lazy",
-          width: 800,
-          height: 450,
-          
-          sizes: "(max-width: 768px) 100vw, 33vw"
-        ) %>
-    </figure>
-    <div class="card-body text-black flex flex-col flex-grow">
-      <h2 class="card-title mb-4">
-        Pharmaceutical Industry </h2>
-      <p class="flex-grow">
-        Optimize document management and regulatory compliance for your clinical studies with integrated AI</p>
-    </p>
-    <div class="card-actions mt-6">
-      <%= link_to(
-            'Learn more about Aïkku IA',
-            aikku_ia_path,
-            class: 'btn btn-sm btn-gradient w-full shadow h-min'
-          ) %>
-    </div>
-  </div>
+
+
+ 
+
+
 </div>
 </div>
 </section>

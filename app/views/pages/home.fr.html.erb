@@ -54,6 +54,37 @@
     Nos <span class="text-gradient">secteurs clés</span>
   </h2>
   <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-16">
+    
+  <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
+      <figure>
+        <%= image_tag(
+         "pharmadoc/pharma.avif",
+          class: "w-full h-48 object-cover",
+          alt: "Industrie pharmaceutique",
+          loading: "lazy",
+          width: 800,
+          height: 450,
+          
+          sizes: "(max-width: 768px) 100vw, 33vw"
+        ) %>
+      </figure>
+      <div class="card-body text-black flex flex-col flex-grow">
+        <h2 class="card-title mb-4">
+          Industrie pharmaceutique
+        </h2>
+        <p class="flex-grow">
+          Optimisez la gestion documentaire et la conformité réglementaire de vos études cliniques grâce à l'IA.
+        </p>
+        <div class="card-actions mt-6">
+          <%= link_to(
+            'En savoir plus sur Aïkku Pharmadoc Analyzer',
+            aikku_ia_path,
+            class: 'btn btn-sm btn-gradient w-full shadow h-min'
+          ) %>
+        </div>
+      </div>
+    </div>
+  
     <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
       <figure>
         <%= image_tag(
@@ -84,6 +115,8 @@
         </div>
       </div>
     </div>
+
+
     <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
       <figure>
         <%= image_tag(
@@ -114,35 +147,12 @@
         </div>
       </div>
     </div>
-    <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
-      <figure>
-        <%= image_tag(
-         "pharmadoc/pharma.avif",
-          class: "w-full h-48 object-cover",
-          alt: "Industrie pharmaceutique",
-          loading: "lazy",
-          width: 800,
-          height: 450,
-          
-          sizes: "(max-width: 768px) 100vw, 33vw"
-        ) %>
-      </figure>
-      <div class="card-body text-black flex flex-col flex-grow">
-        <h2 class="card-title mb-4">
-          Industrie pharmaceutique
-        </h2>
-        <p class="flex-grow">
-          Optimisez la gestion documentaire et la conformité réglementaire de vos études cliniques grâce à l'IA.
-        </p>
-        <div class="card-actions mt-6">
-          <%= link_to(
-            'En savoir plus sur Aïkku Pharmadoc Analyzer',
-            aikku_ia_path,
-            class: 'btn btn-sm btn-gradient w-full shadow h-min'
-          ) %>
-        </div>
-      </div>
-    </div>
+
+
+    
+
+
+
   </div>
 </section>
 <div class="footer-wave">

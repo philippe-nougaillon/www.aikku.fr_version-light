@@ -3,11 +3,11 @@
   <div class="flex-1 text-center lg:text-left reveal">
 
     <h1 class="text-5xl md:text-7xl text-secondary mb-8 leading-tight italic tracking-tight lg:whitespace-nowrap">
-      <%= title "Pharmadoc Analyzer" %>
+      <%= title "PharmaDocAnalyzer" %>
     </h1>
 
     <p class="text-xl lg:text-2xl text-gray-600 mb-10 leading-relaxed text-justify">
-      <span class="text-secondary font-semibold">Pharmadoc Analyzer</span> est une 
+      <span class="text-secondary font-semibold">PharmaDocAnalyzer</span> est une 
       <span class="font-semibold">intelligence artificielle 100% française et souveraine</span>, 
       conçue pour sécuriser et accélérer le contrôle qualité documentaire pour l'industrie pharmaceutique. 
       Elle est capable d'analyser tout type de document pharmaceutique grâce à un modèle d'IA sur mesure, déployé pour chaque client dans un 
@@ -28,7 +28,7 @@
             height: 900, 
             loading: "lazy", 
             alt: "Aïkku Pharmadoc Analyzer Logo", 
-            class: "relative bg-white shadow-xl rounded-3xl animate-pulsing" %>
+            class: "relative bg-white shadow-xl rounded-3xl animate-pulsing p-6" %>
 
     </div>
 
@@ -149,7 +149,7 @@
 </div>
 
 
-<section class="w-full py-24 px-6 lg:px-16 bg-slate-50">
+<section class="w-full py-24 px-6 pb-0  lg:px-16 bg-slate-50">
 
   <div class="max-w-7xl mx-auto">
     
@@ -164,9 +164,8 @@
     </div>
 
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 items-center">
       
-      <div class="space-y-6">
         
         <div class="flex gap-4 rounded-2xl p-5 bg-white shadow-sm border border-gray-200/60 hover:shadow-md transition-shadow">
           <%= icon("data_check", class: "w-6 h-6 text-accent shrink-0 mt-1") %>
@@ -216,9 +215,9 @@
             </p>
           </div>
         </div>
+    </div>
 
-
-        <div class="flex gap-4 rounded-2xl p-5 bg-white shadow-sm border border-gray-200/60 hover:shadow-md transition-shadow">
+ <div class="flex gap-4 rounded-2xl p-5 bg-white shadow-sm mt-4 lg:mt-6  border border-gray-200/60 hover:shadow-md transition-shadow col-span-2">
           <%= icon("energy", class: "w-6 h-6 text-accent shrink-0 mt-1") %>
 
           <div>
@@ -228,11 +227,15 @@
             </p>
           </div>
         </div>
+  </div>
 
-      </div>
+</section>
 
 
-      <div class="w-full">
+
+<section class="max-w-5xl mx-auto p-6 mb-0 md:mb-20">
+
+<div class="w-full">
 
         <div id="carousel" class="carousel w-full rounded-2xl shadow-2xl border border-gray-200 overflow-hidden bg-white" data-turbo="false">
           
@@ -268,28 +271,7 @@
         </div>
 
       </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<section class="max-w-5xl mx-auto p-6 mb-0 md:mb-20">
-  <div id="video" class="items-center flex flex-col reveal delay-2">
-    <div class="text-center lg:text-left">
-      <h2 class="text-3xl font-medium text-accent mb-8">Aïkku Pharmadoc Analyzer en video</h2>
-    </div>
-    <div class=" flex justify-center"></div>
-    <%= video_tag '/videos/AïkkuIA.mp4',
-          controls: true,
-          class: 'w-full max-w-3xl rounded-2xl shadow-2xl',
-          preload: 'none',
-          poster: "New_logo.webp" %>
-    </div>
-  </div>
+ 
 </section>
 
 
@@ -298,18 +280,21 @@
 <section class="text-center bg-info text-white px-8 py-16 w-full ">
 
   <h2 class="text-3xl lg:text-5xl mb-6">
-    Envie de voir <span class="text-gradient">Aïkku Pharmadoc Analyzer</span> en action ?
+    Envie de voir <span class="text-gradient">Aïkku PharmaDocAnalyzer</span> en vidéo ?
   </h2>
 
-  <p class="max-w-xl mx-auto mb-8 leading-relaxed">
-    Notre équipe vous propose des solutions adaptées à vos besoins,
-    avec un accompagnement personnalisé et une assistance technique.
-  </p>
+  <div id="video" class="items-center flex flex-col reveal delay-2">
+  
+    <div class=" flex justify-center"></div>
+    <%= video_tag '/videos/AïkkuIA.mp4',
+          controls: true,
+          class: 'w-full max-w-5xl rounded-2xl shadow-2xl',
+          preload: 'none',
+          poster: "New_logo.webp" %>
+    </div>
+  </div>
 
-  <%= link_to "Contactez-nous →", contact_path,
-        target: "_blank",
-        class: "btn btn-gradient shadow-sm shadow-white/40 mt-6 h-min transition-transform hover:scale-105" %>
-
+ 
 </section>
 
 
@@ -347,7 +332,5 @@
                 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent" do %>
       Consultez notre offre <span aria-hidden="true">→</span>
     <% end %>
-
   </div>
-
 </section>
