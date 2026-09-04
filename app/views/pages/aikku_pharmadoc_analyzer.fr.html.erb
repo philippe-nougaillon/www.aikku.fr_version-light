@@ -1,0 +1,353 @@
+<div class="text-center reveal delay-1 m-8 md:m-30 flex flex-col lg:flex-row items-center gap-6 md:gap-16">
+
+  <div class="flex-1 text-center lg:text-left reveal">
+
+    <h1 class="text-5xl md:text-7xl text-secondary mb-8 leading-tight italic tracking-tight lg:whitespace-nowrap">
+      <%= title "Pharmadoc Analyzer" %>
+    </h1>
+
+    <p class="text-xl lg:text-2xl text-gray-600 mb-10 leading-relaxed text-justify">
+      <span class="text-secondary font-semibold">Pharmadoc Analyzer</span> est une 
+      <span class="font-semibold">intelligence artificielle 100% française et souveraine</span>, 
+      conçue pour sécuriser et accélérer le contrôle qualité documentaire pour l'industrie pharmaceutique. 
+      Elle est capable d'analyser tout type de document pharmaceutique grâce à un modèle d'IA sur mesure, déployé pour chaque client dans un 
+      environnement cloud sécurisé ou on-premise.
+    </p>
+
+  </div>
+
+
+  <div class="flex-1 w-full max-w-xl reveal delay-1">
+
+    <div class="relative group">
+
+      <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full blur-xl opacity-10 group-hover:opacity-20 transition duration-1000"></div>
+
+      <%= image_tag "logos/logopharma.png", 
+            width: 1200, 
+            height: 900, 
+            loading: "lazy", 
+            alt: "Aïkku Pharmadoc Analyzer Logo", 
+            class: "relative bg-white shadow-xl rounded-3xl animate-pulsing" %>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 62" preserveAspectRatio="none">
+    <path d="M0,62 Q300,2 600,32 Q900,62 1200,32 L1200,62 L0,62 Z" fill="#1f1f3d"/>
+  </svg>
+</div>
+
+
+<section id="cas-usage" class="w-full bg-[#1f1f3d] text-white py-24 px-6 md:px-12">
+
+  <div class="max-w-7xl mx-auto">
+
+    <div class="text-center mb-20">
+      <h2 class="text-4xl lg:text-6xl mb-6">
+        Les principaux <span class="text-gradient"> impacts </span> 
+      </h2>
+    </div>
+
+
+    <div class="flex flex-col md:flex-row gap-8">
+      
+      <div class="flex-1 p-8 lg:p-10 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#51c7fd]/50 transition-all duration-300 flex flex-col justify-between">
+        <div>
+
+          <div class="flex flex-row items-center gap-4 mb-6">
+            <div class="w-14 h-14 shrink-0 flex items-center justify-center rounded-2xl bg-[#51c7fd]/10 group-hover:scale-110 group-hover:bg-[#51c7fd] transition-all duration-300">
+              <%= icon("database", class: "w-8 h-8 text-[#51c7fd] group-hover:text-[#1f1f3d]") %>
+            </div>
+
+            <h3 class="text-2xl font-semibold text-white group-hover:text-[#51c7fd] transition-colors">
+              Gestion documentaire
+            </h3>
+          </div>
+
+          <p class="text-gray-300 font-medium text-lg mb-3">
+            Vous faites face à des volumes croissants de documents ?
+          </p>
+
+          <p class="text-gray-400 leading-relaxed text-base">
+            Pharmadoc Analyzer automatise la vérification documentaire : comparaison des métadonnées, détection des incohérences, 
+            classification automatique et analyse du contenu des documents. Elle fournit également des résumés, des traductions 
+            et extrait les données pertinentes que vous souhaitez obtenir.
+          </p>
+
+        </div>
+      </div>
+
+
+      <%# <div class="group p-8 lg:p-10 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#51c7fd]/50 transition-all duration-300 flex flex-col justify-between">
+        <div>
+
+          <div class="flex flex-row items-center gap-4 mb-6">
+            <div class="w-14 h-14 shrink-0 flex items-center justify-center rounded-2xl bg-[#51c7fd]/10 group-hover:scale-110 group-hover:bg-[#51c7fd] transition-all duration-300">
+              <%= icon("passcheck", class: "w-8 h-8 text-[#51c7fd] group-hover:text-[#1f1f3d]") %>
+            <%# </div>
+
+            <h3 class="text-2xl font-semibold text-white group-hover:text-[#51c7fd] transition-colors">
+              Conformité réglementaire
+            </h3>
+          </div>
+
+          <p class="text-gray-300 font-medium text-lg mb-3">
+            Vous devez garantir la conformité FDA, EMA, ANSM ?
+          </p>
+
+          <p class="text-gray-400 leading-relaxed text-base">
+            La plateforme garantit la conformité 21 CFR Part 11, ICH E6 R3, Règlement (UE) 536/2014 et principes ALCOA+. Chaque vérification bénéficie d'une traçabilité totale via piste d'audit.
+          </p>
+
+        </div>
+      </div> %>
+
+
+      <div class="flex-1 p-8 lg:p-10 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#51c7fd]/50 transition-all duration-300 flex flex-col justify-between">
+        <div>
+
+          <div class="flex flex-row items-center gap-4 mb-6">
+            <div class="w-14 h-14 shrink-0 flex items-center justify-center rounded-2xl bg-[#51c7fd]/10 group-hover:scale-110 group-hover:bg-[#51c7fd] transition-all duration-300">
+              <%= icon("admin", class: "w-8 h-8 text-[#51c7fd] group-hover:text-[#1f1f3d]") %>
+            </div>
+
+            <h3 class="text-2xl font-semibold text-white group-hover:text-[#51c7fd] transition-colors">
+              Contrôle qualité & IA spécialisée
+            </h3>
+          </div>
+
+          <p class="text-gray-300 font-medium text-lg mb-3">
+            Vous cherchez une IA fiable, sans approximations ?
+          </p>
+
+          <p class="text-gray-400 leading-relaxed text-base">
+            Pharmadoc Analyzer est spécialement dédiée à l'analyse pharmaceutique. 
+            Elle apprend à partir des documents certifiés de votre entreprise, évitant ainsi les biais des 
+            données externes — réduisant significativement les non-conformités et le temps de revue.
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="M0,0 Q300,60 600,30 Q900,0 1200,30 L1200,0 L0,0 Z" fill="#1f1f3d"/>
+  </svg>
+</div>
+
+
+<section class="w-full py-24 px-6 lg:px-16 bg-slate-50">
+
+  <div class="max-w-7xl mx-auto">
+    
+    <div class="text-center mb-16">
+      <h2 class="text-accent font-bold text-xl tracking-widest uppercase">
+        Fonctionnalités Principales
+      </h2>
+
+      <h3 class="text-3xl lg:text-5xl font-bold mt-4 text-gray-900">
+        Une plateforme, <span class="text-gradient">toutes vos opérations</span>
+      </h3>
+    </div>
+
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      
+      <div class="space-y-6">
+        
+        <div class="flex gap-4 rounded-2xl p-5 bg-white shadow-sm border border-gray-200/60 hover:shadow-md transition-shadow">
+          <%= icon("data_check", class: "w-6 h-6 text-accent shrink-0 mt-1") %>
+
+          <div>
+            <h4 class="text-xl font-bold text-gray-900 mb-1">Contrôle qualité des métadonnées</h4>
+            <p class="text-gray-600 leading-relaxed">
+              Détection automatique des écarts entre les documents importés et le fichier de référence (dates, versions, classifications eTMF).
+            </p>
+          </div>
+        </div>
+
+
+        <div class="flex gap-4 rounded-2xl p-5 bg-white shadow-sm border border-gray-200/60 hover:shadow-md transition-shadow">
+          <%= icon("sync", class: "w-6 h-6 text-accent shrink-0 mt-1") %>
+
+          <div>
+            <h4 class="text-xl font-bold text-gray-900 mb-1">Analyse de cohérence documentaire</h4>
+            <p class="text-gray-600 leading-relaxed">
+              Détection proactive des incohérences entre les pièces de l'étude (protocoles, amendements, eCRF, rapports de monitoring).
+            </p>
+          </div>
+        </div>
+
+
+        <div class="flex gap-4 rounded-2xl p-5 bg-white shadow-sm border border-gray-200/60 hover:shadow-md transition-shadow">
+          <%= icon("userscollab", class: "w-6 h-6 text-accent shrink-0 mt-1") %>
+
+          <div>
+            <h4 class="text-xl font-bold text-gray-900 mb-1">Souveraineté & IA 100% Française</h4>
+            <p class="text-gray-600 leading-relaxed">
+              Solution hébergée sur Aïkku Cloud (France) ou on-premise, avec un modèle d'IA Mistral optimisé 
+              par Aïkku.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="flex gap-4 rounded-2xl p-5 bg-white shadow-sm border border-gray-200/60 hover:shadow-md transition-shadow">
+          <%= icon("doc", class: "w-6 h-6 text-accent shrink-0 mt-1") %>
+
+          <div>
+            <h4 class="text-xl font-bold text-gray-900 mb-1">Alimentation documentaire flexible</h4>
+            <p class="text-gray-600 leading-relaxed">
+              Dépôt direct de documents (PDF, Word, Excel) dans l'interface Aïkku ou connexion via API à la plateforme 
+              client en production.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="flex gap-4 rounded-2xl p-5 bg-white shadow-sm border border-gray-200/60 hover:shadow-md transition-shadow">
+          <%= icon("energy", class: "w-6 h-6 text-accent shrink-0 mt-1") %>
+
+          <div>
+            <h4 class="text-xl font-bold text-gray-900 mb-1">Efficacité énergétique & Démarche RSE</h4>
+            <p class="text-gray-600 leading-relaxed">
+              Optimisation de l'empreinte carbone grâce à la mise en veille programmée du moteur d'IA la nuit et le week-end.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="w-full">
+
+        <div id="carousel" class="carousel w-full rounded-2xl shadow-2xl border border-gray-200 overflow-hidden bg-white" data-turbo="false">
+          
+          <div id="slide1" class="carousel-item relative w-full">
+            <%= image_tag "pharmadoc/Pharmadoc (3).png", class: "w-full h-auto object-fill" %> 
+
+            <div class="absolute left-4 right-4 top-1/2 flex -translate-y-1/2 justify-between">
+              <a href="#slide3" class="btn btn-circle btn-primary btn-sm md:btn-md shadow-md">❮</a>
+              <a href="#slide2" class="btn btn-circle btn-primary btn-sm md:btn-md shadow-md">❯</a>
+            </div>
+          </div>
+
+
+          <div id="slide2" class="carousel-item relative w-full">
+            <%= image_tag "pharmadoc/Pharmadoc (2).png", class: "w-full h-auto object-cover" %>
+
+            <div class="absolute left-4 right-4 top-1/2 flex -translate-y-1/2 justify-between">
+              <a href="#slide1" class="btn btn-circle btn-primary btn-sm md:btn-md shadow-md">❮</a>
+              <a href="#slide3" class="btn btn-circle btn-primary btn-sm md:btn-md shadow-md">❯</a>
+            </div>
+          </div>
+
+
+          <div id="slide3" class="carousel-item relative w-full">
+            <%= image_tag "pharmadoc/Pharmadoc (1).png", class: "w-full h-auto object-cover" %>
+
+            <div class="absolute left-4 right-4 top-1/2 flex -translate-y-1/2 justify-between">
+              <a href="#slide2" class="btn btn-circle btn-primary btn-sm md:btn-md shadow-md">❮</a>
+              <a href="#slide1" class="btn btn-circle btn-primary btn-sm md:btn-md shadow-md">❯</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="max-w-5xl mx-auto p-6 mb-0 md:mb-20">
+  <div id="video" class="items-center flex flex-col reveal delay-2">
+    <div class="text-center lg:text-left">
+      <h2 class="text-3xl font-medium text-accent mb-8">Aïkku Pharmadoc Analyzer en video</h2>
+    </div>
+    <div class=" flex justify-center"></div>
+    <%= video_tag '/videos/AïkkuIA.mp4',
+          controls: true,
+          class: 'w-full max-w-3xl rounded-2xl shadow-2xl',
+          preload: 'none',
+          poster: "New_logo.webp" %>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="text-center bg-info text-white px-8 py-16 w-full ">
+
+  <h2 class="text-3xl lg:text-5xl mb-6">
+    Envie de voir <span class="text-gradient">Aïkku Pharmadoc Analyzer</span> en action ?
+  </h2>
+
+  <p class="max-w-xl mx-auto mb-8 leading-relaxed">
+    Notre équipe vous propose des solutions adaptées à vos besoins,
+    avec un accompagnement personnalisé et une assistance technique.
+  </p>
+
+  <%= link_to "Contactez-nous →", contact_path,
+        target: "_blank",
+        class: "btn btn-gradient shadow-sm shadow-white/40 mt-6 h-min transition-transform hover:scale-105" %>
+
+</section>
+
+
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="M0,0 Q300,60 600,30 Q900,0 1200,30 L1200,0 L0,0 Z" fill="#1f1f3d"/>
+  </svg>
+</div>
+
+
+<section class="px-6 pt-20 md:px-20 mb-20">
+
+  <div class="group w-full flex flex-col md:flex-row items-center justify-between gap-8
+              border border-gray-200 rounded-3xl p-8 md:p-10 bg-white shadow-sm
+              hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+
+    <div class="flex items-start gap-4">
+      <div class="bg-blue-50 p-3 rounded-xl text-accent group-hover:bg-accent group-hover:text-white transition-colors shrink-0">
+        <%= icon("rocket", class: "w-6 h-6") %>
+      </div>
+
+      <div>
+        <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Support & Services</p>
+        <h3 class="text-xl font-medium mb-2">Besoin d'une fonctionnalité ?</h3>
+        <p class="text-sm text-gray-500 leading-relaxed max-w-md">
+          Notre équipe est à votre écoute pour des besoins spécifiques.
+        </p>
+      </div>
+    </div>
+
+    <%= link_to services_path,
+        class: "shrink-0 inline-flex items-center gap-2 bg-accent text-white font-semibold
+                text-sm px-6 py-3 rounded-xl transition-colors duration-200
+                hover:bg-accent/85 active:bg-accent/70
+                focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent" do %>
+      Consultez notre offre <span aria-hidden="true">→</span>
+    <% end %>
+
+  </div>
+
+</section>

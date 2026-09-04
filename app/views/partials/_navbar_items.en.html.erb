@@ -1,7 +1,7 @@
 <%= navbar_item 'home', root_path, 'Home' %>
 <li>
   <details>
-    <summary class="hover:underline hover:underline-offset-8 hover:text-primary  <%= 'underline underline-offset-8 text-primary ' if ['logiciels', 'aikku_plann', 'aikku_coopcom', 'aikku_ia', 'aikku_sign', 'aikku_projects', 'prestofacto', 'talea'].include?(params[:action]) %>">Solutions</summary>
+    <summary class="hover:underline hover:underline-offset-8 hover:text-primary  <%= 'underline underline-offset-8 text-primary ' if ['logiciels', 'aikku_plann', 'aikku_coopcom', 'aikku_pharmadoc_analyzer', 'aikku_sign', 'aikku_projects', 'prestofacto', 'talea'].include?(params[:action]) %>">Solutions</summary>
     <ul class="bg-base-100 rounded-t-none p-2 lg:w-min end-0">
       <li>
         <%= link_to "Are you a higher education institution?", aikku_plann_path, class: "hover:underline hover:underline-offset-8 hover:text-primary  lg:whitespace-nowrap #{'underline underline-offset-8 text-primary ' if params[:action] == 'aikku_plann' }" %>
@@ -10,7 +10,7 @@
         <%= link_to "Are you a local authority or inter-municipal body?", aikku_coopcomm_path, class: "hover:underline hover:underline-offset-8 hover:text-primary lg:whitespace-nowrap #{'underline underline-offset-8 text-primary ' if params[:action] == 'aikku_coopcomm' }" %>
       </li>
       <li>
-        <%= link_to "Are you a pharmaceutical company?", aikku_ia_path, class: "hover:underline hover:underline-offset-8 hover:text-primary  lg:whitespace-nowrap #{'underline underline-offset-8 text-primary ' if params[:action] == 'aikku_ia' }" %>
+        <%= link_to "Are you a pharmaceutical company?", aikku_pharmadoc_analyzer_path, class: "hover:underline hover:underline-offset-8 hover:text-primary  lg:whitespace-nowrap #{'underline underline-offset-8 text-primary ' if params[:action] == 'aikku_pharmadoc_analyzer' }" %>
       </li>
     </ul>
   </details>
