@@ -28,6 +28,11 @@ class PagesController < ApplicationController
   end
 
   def contact_submit
+    unless verify_recaptcha
+      flash.now[:alert] = I18n.t("contact.recaptcha_problem")
+      return render :contact, status: :unprocessable_entity
+    end
+
     message = {
       email: params[:email],
       nom: params[:nom],

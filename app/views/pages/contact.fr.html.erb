@@ -52,6 +52,13 @@
       <%= email_field_tag :email, params[:email], class:"input input-bordered rounded-lg w-full", required: true, placeholder: "Entrez une adresse email valide" %>
       <%= text_field_tag :nom, params[:nom], class:"input input-bordered rounded-lg w-full mt-4", required: true, placeholder: 'Entrez votre nom' %>
       <%= text_area_tag :contenu, params[:contenu], class:"textarea textarea-bordered rounded-lg w-full mt-4", rows: 4, required: true, placeholder: "Votre message" %>
+      <div class="flex justify-center mt-6 overflow-hidden"
+           data-controller="recaptcha"
+           data-recaptcha-site-key-value="<%= Recaptcha.configuration.site_key %>"
+           data-recaptcha-lang-value="<%= I18n.locale %>"></div>
+      <p class="text-xs text-gray-500 text-center mt-2">
+        Ce formulaire est protégé par reCAPTCHA (Google), qui dépose un cookie pour vérifier que vous n'êtes pas un robot.
+      </p>
       <div class="flex justify-center">
         <%= button_tag "Envoyer le message",
           type: "submit",
