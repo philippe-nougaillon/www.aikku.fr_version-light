@@ -50,8 +50,15 @@
         Send us a message
       </h2>
       <%= email_field_tag :email, params[:email], class:"input input-bordered rounded-lg w-full", required: true, placeholder: "Enter a valid email address" %>
-      <%= text_field_tag :structure, params[:structure], class:"input input-bordered rounded-lg w-full mt-4", required: true, placeholder: 'Enter your company name' %>
+      <%= text_field_tag :nom, params[:nom], class:"input input-bordered rounded-lg w-full mt-4", required: true, placeholder: 'Enter your name' %>
       <%= text_area_tag :contenu, params[:contenu], class:"textarea textarea-bordered rounded-lg w-full mt-4", rows: 4, required: true, placeholder: "Your message" %>
+      <div class="flex justify-center mt-6 overflow-hidden"
+           data-controller="recaptcha"
+           data-recaptcha-site-key-value="<%= Recaptcha.configuration.site_key %>"
+           data-recaptcha-lang-value="<%= I18n.locale %>"></div>
+      <p class="text-xs text-gray-500 text-center mt-2">
+        This form is protected by reCAPTCHA (Google), which sets a cookie to check that you are not a robot.
+      </p>
       <div class="flex justify-center">
         <%= button_tag "Send message",
           type: "submit",
