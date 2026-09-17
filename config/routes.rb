@@ -10,6 +10,7 @@ Rails.application.routes.draw do
       get :aikku_ia, to: "pages#aikku_ia"
       get :aikku_plann, to: "pages#aikku_plann"
       get :aikku_coopcomm, to: "pages#aikku_coopcomm"
+      get :presto_facto, to: "pages#presto_facto"
       get :qui_sommes_nous, to: "pages#qui_sommes_nous"
       get :nos_clients, to: "pages#nos_clients"
       get :services, to: "pages#services"

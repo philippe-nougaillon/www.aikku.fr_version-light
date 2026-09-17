@@ -12,6 +12,11 @@
       <li>
         <%= link_to "Are you a local authority or inter-municipal body?", aikku_coopcomm_path, class: "hover:underline hover:underline-offset-8 hover:text-primary lg:whitespace-nowrap #{'underline underline-offset-8 text-primary ' if params[:action] == 'aikku_coopcomm' }" %>
       </li>
+      <li>
+        <%= link_to "Are you an extracurricular service?", presto_facto_path, class: "hover:underline hover:underline-offset-8 hover:text-primary hover:font-semibold lg:whitespace-nowrap #{'underline underline-offset-8 text-primary font-semibold' if params[:action] == 'presto_facto' }" %>
+      </li>
+
+      
       
     </ul>
   </details>

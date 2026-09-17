@@ -1,0 +1,170 @@
+<div class="text-center reveal delay-1 m-8 md:m-30 flex flex-col lg:flex-row items-center gap-6 md:gap-16">
+  <div class="flex-1 text-center lg:text-left reveal">
+    <h1 class="text-5xl md:text-7xl text-secondary mb-8 leading-tight italic tracking-tight">
+      <%= title "Simplifiez la gestion de vos prestations " %>
+    </h1>
+    <p class="text-xl lg:text-2xl text-gray-600 mb-10 leading-relaxed text-justify">
+      <span class="text-secondary">PrestoFacto</span> est conçu pour<span class="font-semibold"> optimiser l'organisation administrative</span>, la comptabilité par famille et la facturation des prestations journalières des petites collectivités et associations.
+    </p>
+  </div>
+  <div class="flex-1 w-full max-w-xl reveal delay-1">
+    <div class="relative group">
+      <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full blur-3xl opacity-10 group-hover:opacity-20 transition duration-1000"></div>
+      <%= image_tag "logos/prestofacto.png", 
+            class: "relative bg-white shadow-xl rounded-3xl p-12 animate-pulsing", 
+            alt: "PrestoFacto Logo" %>
+    </div>
+  </div>
+</div>
+
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 62" preserveAspectRatio="none">
+    <path d="M0,62 Q300,2 600,32 Q900,62 1200,32 L1200,62 L0,62 Z" fill="#1f1f3d"/>
+  </svg>
+</div>
+
+<section id="fonctionnalités" class="w-full bg-[#1f1f3d] text-white py-24 px-6 md:px-12">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-20">
+      <h2 class="text-4xl lg:text-6xl mb-6">
+        Toute votre gestion périscolaire <span class="text-gradient">centralisée</span>
+      </h2>
+      <p class="text-[#51c7fd] font-bold text-sm uppercase tracking-[0.3em]">
+        Ce que vous offre la solution
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  gap-8">
+      <% 
+        features = [
+          { icon: "users", title: "Comptabilité par famille", text: "Suivi individuel des comptes et des consommations avec une balance famille détaillée." },
+          { icon: "calendar-days", title: "Gestion des réservations", text: "Facturation des prestations basée sur le principe de la réservation préalable." },
+          { icon: "doc", title: "Facturation mensuelle", text: "Édition automatique d'une facture PDF mensuelle par famille récapitulant consommations et solde." },
+          { icon: "utensils", title: "Cantine & Périscolaire", text: "Gestion flexible des repas, de la garderie et des activités." },
+          { icon: "user-check", title: "Portail Parents dédié", text: "Espace sécurisé permettant aux familles de consulter leurs réservations, leurs factures et de régler en ligne." },
+          { icon: "building", title: "Gestion Multi-structures", text: "Centralisation de plusieurs établissements (écoles, centres) au sein d'une même organisation." },
+        ]
+      %>
+      <% features.each do |f| %>
+        <div class="group p-10 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#51c7fd]/50 transition-all duration-300">
+          <div class="flex flex-row items-center gap-2 mb-2">
+            <div class="w-14 h-14 flex items-center justify-center rounded-2xl bg-[#51c7fd]/10 group-hover:scale-110 group-hover:bg-[#51c7fd] transition-all duration-300">
+              <%= icon(f[:icon], class: "text-2xl text-[#51c7fd] group-hover:text-[#1f1f3d]") %>
+            </div>
+            <h3 class="text-2xl text-white group-hover:text-[#51c7fd] transition-colors"><%= f[:title] %></h3>
+          </div>
+          <p class="text-gray-400 leading-relaxed text-base">
+            <%= f[:text] %>
+          </p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="M0,0 Q300,60 600,30 Q900,0 1200,30 L1200,0 L0,0 Z" fill="#1f1f3d"/>
+  </svg>
+</div>
+
+<section class="flex flex-col p-10 md:p-20 md:flex-row items-center gap-16">
+  <div class="flex-1 card w-full">
+    <%= image_tag "prestofacto_image.jpg",
+          class: "shadow rounded-2xl p-2",
+          alt: "Interface de PrestoFacto" %>
+  </div>
+  <div class="flex-1 order-1 lg:order-2">
+    <h3 class="text-[#51c7fd] font-black mb-4 uppercase tracking-[0.2em] text-sm">Pourquoi PrestoFacto ?</h3>
+    <h2 class="text-4xl lg:text-5xl mb-8 leading-tight text-secondary">
+     Une solution sur mesure pour toutes vos structures
+    </h2>
+    <p class="text-lg text-gray-600 mb-8 leading-relaxed text-justify">
+      De la petite structure locale aux réseaux multi-établissements, gagnez un temps précieux au quotidien grâce à
+      <span class="font-semibold"> un outil ultra-flexible</span> qui automatise votre gestion administrative et votre facturation. 
+      Il s'adapte parfaitement à la réalité des associations, écoles, mairies et centres de loisirs, quelle que soit leur taille.
+    </p>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <% ["Logiciel Open-Source", "Factures PDF claires", "Comptabilité famille", "Gain de temps"].each do |item| %>
+        <li class="flex items-center gap-3 font-bold text-secondary">
+          <%= icon("cercle-check", class: "w-6 h-6 text-[#51c7fd]") %>
+          <%= item %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</section>
+
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 62" preserveAspectRatio="none">
+    <path d="M0,62 Q300,2 600,32 Q900,62 1200,32 L1200,62 L0,62 Z" fill="#1f1f3d"/>
+  </svg>
+</div>
+
+<section class="text-center bg-info text-white px-8 py-16 w-full">
+  <h2 class="text-3xl lg:text-5xl mb-6">
+    Prêt à tester <span class="text-gradient">PrestoFacto</span> ?
+  </h2>
+  <p class="max-w-xl mx-auto mb-8 leading-relaxed">
+    Découvrez l'application en direct ou explorez sa documentation. Notre équipe vous accompagne
+    à chaque étape avec des solutions sur mesure et un support technique dédié.
+  </p>
+  <%= link_to "Voir le site officiel →", "https://www.prestofacto.fr/",
+        target: "_blank",
+        class: "btn btn-gradient shadow-sm shadow-white/40 mt-6 h-min transition-transform hover:scale-105" %>
+</section>
+
+<div class="footer-wave">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="M0,0 Q300,60 600,30 Q900,0 1200,30 L1200,0 L0,0 Z" fill="#1f1f3d"/>
+  </svg>
+</div>
+
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 pt-20 md:px-20 mb-20">
+  <div class="group border border-gray-200 rounded-3xl p-8 bg-white shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+    <div class="flex items-start gap-4">
+      <div class="bg-blue-50 p-3 rounded-xl text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+        <%= icon("github", class: "w-6 h-6 ") %>
+      </div>
+      <div>
+       <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Développement</p>
+        <h3 class="text-xl font-medium mb-3">Code source ouvert</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          Développé en France sous licence libre et publié en toute transparence sur 
+          <%= link_to "GitHub",
+                "https://github.com/philippe-nougaillon/PrestoFacto",
+                target: "_blank",
+                class: "font-bold text-accent hover:text-secondary underline decoration-2 underline-offset-4" %>. 
+          Retrouvez également la fiche du logiciel sur le 
+          <%= link_to "Comptoir du Libre",
+                "https://comptoir-du-libre.org/fr/softwares/640",
+                target: "_blank",
+                class: "font-bold text-accent hover:text-secondary underline decoration-2 underline-offset-4" %> 
+          ou sur 
+          <%= link_to "Framalibre",
+                "https://framalibre.org/notices/prestofacto.html",
+                target: "_blank",
+                class: "font-bold text-accent hover:text-secondary underline decoration-2 underline-offset-4" %>.
+       </p>
+      </div>
+    </div>
+  </div>
+  <div class="group border border-gray-200 rounded-3xl p-8 bg-white shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+    <div class="flex items-start gap-4">
+      <div class="bg-blue-50 p-3 rounded-xl text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+        <%= icon("rocket", class: "w-6 h-6") %>
+      </div>
+      <div>
+        <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Support & Services</p>
+        <h3 class="text-xl  font-medium mb-3">Besoin d'une fonctionnalité ?</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">
+          Notre équipe est à votre écoute pour des besoins spécifiques.
+          <%= link_to services_path, class: "block mt-2 font-semibold text-accent hover:text-secondary transition-colors group/link" do %>
+            Consultez notre offre de services personnalisés →
+            <span class="block mt-2 font-semibold text-accent cursor-pointer hover:underline">
+            </span>
+          <% end %>
+          </p>
+      </div>
+    </div>
+  </div>
+</section>

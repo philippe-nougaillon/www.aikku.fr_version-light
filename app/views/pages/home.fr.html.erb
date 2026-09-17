@@ -50,22 +50,20 @@
   </svg>
 </div>
 <section id="secteurs" class="w-full text-white px-10 py-20 md:p-20 bg-info">
-  <h2 class="text-3xl lg:text-5xl text-center  mb-12">
+  <h2 class="text-3xl lg:text-5xl text-center mb-12">
     Nos <span class="text-gradient">secteurs clés</span>
   </h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-16">
-    
-  <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">    
+        <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
       <figure>
         <%= image_tag(
-         "pharmadoc/pharma.avif",
+          "pharmadoc/pharma.avif",
           class: "w-full h-48 object-cover",
           alt: "Industrie pharmaceutique",
           loading: "lazy",
           width: 800,
           height: 450,
-          
-          sizes: "(max-width: 768px) 100vw, 33vw"
+          sizes: "(max-width: 768px) 100vw, 25vw"
         ) %>
       </figure>
       <div class="card-body text-black flex flex-col flex-grow">
@@ -94,8 +92,7 @@
           loading: "lazy",
           width: 800,
           height: 450,
-          
-          sizes: "(max-width: 768px) 100vw, 33vw"
+          sizes: "(max-width: 768px) 100vw, 25vw"
         ) %>
       </figure>
       <div class="card-body text-black flex flex-col flex-grow">
@@ -116,7 +113,6 @@
       </div>
     </div>
 
-
     <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
       <figure>
         <%= image_tag(
@@ -126,8 +122,7 @@
           loading: "lazy",
           width: 800,
           height: 450,
-          
-          sizes: "(max-width: 768px) 100vw, 33vw"
+          sizes: "(max-width: 768px) 100vw, 25vw"
         ) %>
       </figure>
       <div class="card-body text-black flex flex-col flex-grow">
@@ -148,11 +143,35 @@
       </div>
     </div>
 
-
+    <div class="bg-white h-full border border-gray-100 rounded-xl overflow-hidden flex flex-col">
+      <figure>
+        <%= image_tag(
+          "misc/periscolaire.avif",
+          class: "w-full h-48 object-cover",
+          alt: "Enfants en activité périscolaire",
+          loading: "lazy",
+          width: 800,
+          height: 450,
+          sizes: "(max-width: 768px) 100vw, 25vw"
+        ) %>
+      </figure>
+      <div class="card-body text-black flex flex-col flex-grow">
+        <h2 class="card-title mb-4">
+          Services périscolaires & Enfance
+        </h2>
+        <p class="flex-grow">
+          Simplifiez la gestion, la réservation et la facturation de vos activités périscolaires.
+        </p>
+        <div class="card-actions mt-6">
+          <%= link_to(
+            'En savoir plus sur PrestoFacto',
+            presto_facto_path,
+            class: 'btn btn-sm btn-gradient w-full shadow h-min'
+          ) %>
+        </div>
+      </div>
+    </div>
     
-
-
-
   </div>
 </section>
 <div class="footer-wave">
@@ -177,34 +196,25 @@
     pour des clients tels que <span class="font-semibold">Sanofi</span> (eCRF), <span class="font-semibold">L’Oréal</span> (ePRO), <span class="font-semibold">PPRS Research</span> (CDMS), <span class="font-semibold">AirJin</span> (IoT)
   </p>
 </section>
-<section id="clients" class="flex flex-col justify-center p-15 ">
-  <h2 class="text-center text-3xl lg:text-5xl  mb-12 ">
+<section id="clients" class="flex flex-col justify-center p-15 overflow-hidden">
+  <h2 class="text-center text-3xl lg:text-5xl mb-12">
     Ils nous font <span class="text-gradient">confiance</span>
   </h2>
-  <div class="flex flex-wrap justify-center items-center gap-8 ">
-    <div class="w-64 h-64 rounded flex items-center">
-      <%= link_to "https://www.madmoselle.com", target: "_blank" do %>
-        <%= image_tag "logos/madmoselle.avif", class:"mx-auto p-8", alt: 'Mad & Moselle logo' %>
-      <% end %>
-    </div>
-    <div class="w-64 h-64 rounded flex items-center">
-      <%= link_to "https://www.grohe.com", target: "_blank" do %>
-        <%= image_tag "logos/grohe.avif", class:"mx-auto p-8", alt: 'GROHE logo' %>
-      <% end %>
-    </div>
-    <div class="w-64 h-64 rounded flex items-center">
-      <%= link_to "https://www.iae-paris.com", target: "_blank" do %>
-        <%= image_tag "logos/iaelogo.avif", class:"mx-auto p-8", alt: 'IAE Paris-Sorbonne logo' %>
-      <% end %>
-    </div>
-    <div class="w-64 h-64 rounded flex items-center">
-      <%= link_to "https://www.fnaut.fr/", target: "_blank" do %>
-        <%= image_tag "logos/fnaut.avif", class:"mx-auto p-8", alt: 'Logo FNAUT' %>
-      <% end %>
-    </div>
-    <div class="w-64 h-64 rounded flex items-center">
-      <%= link_to "https://www.infogene.fr", target: "_blank" do %>
-        <%= image_tag "logos/infogene.avif", class:"mx-auto p-8 rounded", alt: 'Infogene logo' %>
+
+  <div class="relative w-full overflow-hidden group">
+    <div class="flex flex-nowrap items-center gap-8 w-max animate-marquee-horizontal">
+      <% [
+        { url: "https://www.madmoselle.com", logo: "logos/madmoselle.avif", alt: "Mad & Moselle logo" },
+        { url: "https://www.grohe.com", logo: "logos/grohe.avif", alt: "GROHE logo" },
+        { url: "https://www.iae-paris.com", logo: "logos/iaelogo.avif", alt: "IAE Paris-Sorbonne logo" },
+        { url: "https://www.fnaut.fr/", logo: "logos/fnaut.avif", alt: "Logo FNAUT" },
+        { url: "https://www.infogene.fr", logo: "logos/infogene.avif", alt: "Infogene logo" }
+      ].tap { |list| break list + list }.each do |client| %>
+        <div class="w-64 h-64 rounded flex items-center shrink-0">
+          <%= link_to client[:url], target: "_blank", rel: "noopener" do %>
+            <%= image_tag client[:logo], class: "mx-auto p-8", alt: client[:alt] %>
+          <% end %>
+        </div>
       <% end %>
     </div>
   </div>

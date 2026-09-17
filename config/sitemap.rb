@@ -16,6 +16,9 @@ SitemapGenerator::Sitemap.create do
   add aikku_ia_path(locale: :fr)
   add aikku_ia_path(locale: :en)
 
+  add presto_facto_path(locale: :fr)
+  add presto_facto_path(locale: :en)
+
   add services_path(locale: :fr)
   add services_path(locale: :en)
 

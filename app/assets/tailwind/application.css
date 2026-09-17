@@ -211,4 +211,22 @@
   .footer-wave path {
     shape-rendering: geometricPrecision;
   }
+
+   @keyframes marqueeHorizontal {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee-horizontal {
+    animation: marqueeHorizontal 40s linear infinite;
+  }
+
+  .group:hover .animate-marquee-horizontal {
+    animation-play-state: paused;
+  }
 }
+
