@@ -78,4 +78,6 @@ gem "mailgun-ruby"
 
 gem "sitemap_generator"
 
+gem "recaptcha", "~> 5.21"
+
 
