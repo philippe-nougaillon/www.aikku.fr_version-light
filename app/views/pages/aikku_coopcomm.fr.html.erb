@@ -61,9 +61,9 @@
             <div class="w-14 h-14 flex items-center justify-center rounded-2xl bg-[#51c7fd]/10 group-hover:scale-110 group-hover:bg-[#51c7fd] transition-all duration-300">
               <%= icon(f[:icon], class: "text-2xl text-[#51c7fd] group-hover:text-[#1f1f3d]") %>
             </div>
-            <h3 class=" text-2xl  text-white group-hover:text-[#51c7fd] transition-colors"><%= f[:title] %></h3>
+            <h3 class=" text-2xl font-medium text-white group-hover:text-[#51c7fd] transition-colors"><%= f[:title] %></h3>
           </div>
-          <p class="text-gray-400 leading-relaxed text-base">
+          <p class="text-gray-300 leading-relaxed text-base">
             <%= f[:text] %>
           </p>
         </div>
@@ -155,7 +155,7 @@
       <div>
         <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Développement</p>
         <h3 class="text-xl font-medium mb-3">Code source ouvert</h3>
-        <p class="text-sm text-gray-500 leading-relaxed">
+        <p class="text-base text-gray-500 leading-relaxed">
           Développé en France et publié en toute transparence sur 
           <%= link_to "GitHub",
             "https://github.com/philippe-nougaillon/coopcomm",
@@ -173,7 +173,7 @@
       <div>
         <p class="text-xs font-bold text-accent uppercase tracking-widest mb-1">Support & Services</p>
         <h3 class="text-x font-medium mb-3">Besoin d'une fonctionnalité ?</h3>
-        <p class="text-sm text-gray-500 leading-relaxed">
+        <p class="text-base text-gray-500 leading-relaxed">
           Notre équipe est à votre écoute pour des besoins spécifiques.
           <%= link_to services_path, class: "block mt-2 font-semibold text-accent hover:text-secondary transition-colors group/link" do %>
             Consultez notre offre de services personnalisés →
