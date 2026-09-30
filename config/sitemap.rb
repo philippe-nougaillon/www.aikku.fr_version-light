@@ -10,8 +10,8 @@ SitemapGenerator::Sitemap.create do
   add aikku_plann_path(locale: :fr)
   add aikku_plann_path(locale: :en)
 
-  add aikku_coopcomm_path(locale: :fr)
-  add aikku_coopcomm_path(locale: :en)
+  add coopcomm_path(locale: :fr)
+  add coopcomm_path(locale: :en)
 
   add aikku_ia_path(locale: :fr)
   add aikku_ia_path(locale: :en)

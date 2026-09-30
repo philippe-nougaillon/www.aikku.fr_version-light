@@ -9,10 +9,13 @@ class PagesController < ApplicationController
   def aikku_plann
   end
 
-  def aikku_coopcomm
+  def coopcomm
   end
   
   def aikku_ia
+  end
+
+  def presto_facto
   end
 
   def services
