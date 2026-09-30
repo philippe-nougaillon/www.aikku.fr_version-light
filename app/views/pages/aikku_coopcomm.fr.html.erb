@@ -4,7 +4,7 @@
       <%= title "Mutualisez mieux, dépensez moins !" %>
     </h1>
     <p class="text-xl lg:text-2xl text-gray-600 mb-10 leading-relaxed  text-justify ">
-      <span class=" text-secondary">Aïkku CoopComm</span> est une     <span class="font-semibold">plateforme de mutualisation intercommunale </span> conçue pour 
+      <span class=" text-secondary">CoopComm</span> est une <span class="font-semibold">plateforme de mutualisation intercommunale </span> conçue pour 
       répondre aux besoins des communautés de communes, des syndicats et des collectivités territoriales. 
       Optimisez vos ressources humaines et techniques dans un outil unique et souverain.
     </p>
@@ -44,13 +44,13 @@
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
       <% 
         features = [
-          { icon: "euro", title: "Maîtrise budgétaire", text: "Un tableau de bord permet aux adhérents et aux managers de suivre leurs indicateurs clés."},
-          { icon: "handyman", title: "Interventions", text: "L'adhérent émet une demande, l'équipe locale se rend sur place et enregistre l'intervention. Une fois terminée, l'adhérent la valide ou donne son avis." },
+          { icon: "euro", title: "Maîtrise budgétaire", text: "Un tableau de bord permet aux adhérents et aux managers de suivre leurs indicateurs clés, favorisant ainsi une totale transparence entre l'EPCI et ses membres."},
+          { icon: "handyman", title: "Interventions", text: "Les agents se rendent sur place et enregistrent l'intervention. L’adhérent peut aussi formuler une demande d’intervention. Une fois terminée, l'adhérent la valide et donne son avis." },
           { icon: "qrcode", title: "QR Code", text: "Pour les interventions récurrentes, générez un QR code depuis un modèle d'intervention. Un scan démarre la mission, un second la termine automatiquement."},
           { icon: "boxes", title: "Gestion des actifs", text: "Suivi de l'inventaire et des prêts, avec la trace de chaque utilisation lors des interventions. Bloque l'attribution d'une intervention à un agent absent." },
           { icon: "gears", title: "Workflow", text: "Chaque intervention change d'état via des actions définies à l'avance. Certaines déclenchent des notifications." },
-          { icon: "users", title: "Agents et Managers", text: "Les agents voient uniquement leurs interventions. Les managers ont accès à toutes les données de leur organisation." },
-          { icon: "message", title: "Messagerie instantanée", text: "Les managers échangent directement avec les agents. Un système de modération du vocabulaire inapproprié veille à la bonne qualité des discussions."},
+          { icon: "users", title: "Documentation", text: "Un espace de partage de documents est à la disposition des managers afin de centraliser leurs données en toute sécurité. S’y trouve déjà un Blog, les guides d’utilisation selon le rôle et une FaQ." },
+          { icon: "message", title: "Messagerie instantanée", text: "Managers, agents et adhérents peuvent librement échanger via la messagerie interne selon les services qu’ils partagent. Un système de modération du vocabulaire inapproprié veille à la bonne qualité des discussions."},
           { icon: "bell", title: "Notifications et alertes",  text: "Un email ou un message WhatsApp informe toutes les parties prenantes lors de certains changements d'état." },
           { icon: "robot", title: "AIBOT IA", text: "À partir des interventions passées, l'IA vous propose celles qu'il faut prévoir. Elle analyse les données du site pour vous donner rapidement l'information recherchée." }
         ]
@@ -83,13 +83,13 @@
             alt: "Tableau de bord CoopComm sur différents écrans" %>
     </div>
     <div class="flex-1 order-1 lg:order-2">
-      <h3 class="text-[#51c7fd] font-black mb-4 uppercase tracking-[0.2em] text-sm">Pourquoi Aïkku CoopComm ?</h3>
+      <h3 class="text-[#51c7fd] font-black mb-4 uppercase tracking-[0.2em] text-base">Pourquoi CoopComm ?</h3>
       <h2 class="text-4xl lg:text-5xl mb-8 leading-tight text-secondary">
         Une solution complète pour votre intercommunalité
       </h2>
       <p class="text-lg text-gray-600 mb-8 leading-relaxed text-justify">
         Réduisez vos coûts, améliorez l'efficacité de vos équipes et garantissez une 
-        <span class="font-semibold">souveraineté numérique 100 % française</span>. Notre plateforme assure la conformité RGPD 
+        <span class="font-semibold">souveraineté numérique 100% française</span>. Notre plateforme assure la conformité RGPD 
         tout en offrant une expérience utilisateur fluide pour tous les agents.
       </p>
       <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -105,13 +105,15 @@
 <section class="max-w-5xl mx-auto p-6 mb-0 md:mb-20">
   <div id="video" class="items-center flex flex-col reveal delay-2">
     <div class="text-center lg:text-left">
-      <h2 class="text-3xl font-medium text-accent mb-8">Aïkku COOPCOMM en video</h2>
+      <h2 class="text-3xl font-medium text-accent mb-8">COOPCOMM en video</h2>
     </div>
     <div class=" flex justify-center"></div>
     <%= video_tag '/videos/videoCoopComm.mp4',
           controls: true,
           class: 'w-full max-w-5xl rounded-2xl shadow-2xl',
           preload: 'none',
+          controlsList: 'nodownload',
+          oncontextmenu: 'return false;',
           poster: "New_logo.webp" %>
     </div>
   </div>
@@ -130,7 +132,7 @@
 </div>
 <section class="text-center bg-info text-white px-8 py-16 w-full ">
   <h2 class="text-3xl lg:text-5xl  mb-6">
-    Envie de voir <span class="text-gradient">Aïkku COOPCOMM</span> en action ?
+    Envie de voir <span class="text-gradient">COOPCOMM</span> en action ?
   </h2>
   <p class="max-w-xl mx-auto mb-8 leading-relaxed">
     Notre équipe vous propose des solutions adaptées à vos besoins,
