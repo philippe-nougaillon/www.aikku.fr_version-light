@@ -81,3 +81,5 @@ gem "sitemap_generator"
 gem "recaptcha", "~> 5.21"
 
 
+
+gem "view_component", "~> 4.15"

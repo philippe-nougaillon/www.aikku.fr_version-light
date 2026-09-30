@@ -44,15 +44,15 @@
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
       <% 
         features = [
-          { icon: "boxes", title: "Gestion des actifs", text: "Suivi de l'inventaire du matériel et des prêts. Localisez facilement votre matériel grâce à notre carte interactive." },
-          { icon: "handyman", title: "Interventions", text: "Demande émise par l'adhérent, réalisée par l'agent sur le terrain et validée en un clic." },
-          { icon: "users", title: "Agents et Managers", text: "Accès segmentés : données terrain pour les agents, vision stratégique complète pour les managers." },
-          { icon: "qrcode", title: "Pointage par QR Code", text: "Gagnez du temps : scannez le code pour ouvrir directement l'intervention sans saisie manuelle." },
-          { icon: "euro", title: "Maîtrise budgétaire", text: "Tableau de bord en temps réel pour suivre vos indicateurs clés et vos dépenses." },
-          { icon: "gears", title: "Workflow", text: "Automatisation des processus et notifications intelligentes à chaque changement d'état." },
-          { icon: "message", title: "Messagerie instantanée", text: "Communication directe entre managers et agents avec modération intégrée." },
-          { icon: "bell", title: "Notifications et alertes", text: "Alertes automatiques par e-mail ou WhatsApp pour informer toutes les parties prenantes." },
-          { icon: "robot", title: "Prévision d'intervention (IA)", text: "Une intelligence artificielle suggère les interventions à prévoir selon l'historique." }
+          { icon: "euro", title: "Maîtrise budgétaire", text: "Un tableau de bord permet aux adhérents et aux managers de suivre leurs indicateurs clés."},
+          { icon: "handyman", title: "Interventions", text: "L'adhérent émet une demande, l'équipe locale se rend sur place et enregistre l'intervention. Une fois terminée, l'adhérent la valide ou donne son avis." },
+          { icon: "qrcode", title: "QR Code", text: "Pour les interventions récurrentes, générez un QR code depuis un modèle d'intervention. Un scan démarre la mission, un second la termine automatiquement."},
+          { icon: "boxes", title: "Gestion des actifs", text: "Suivi de l'inventaire et des prêts, avec la trace de chaque utilisation lors des interventions. Bloque l'attribution d'une intervention à un agent absent." },
+          { icon: "gears", title: "Workflow", text: "Chaque intervention change d'état via des actions définies à l'avance. Certaines déclenchent des notifications." },
+          { icon: "users", title: "Agents et Managers", text: "Les agents voient uniquement leurs interventions. Les managers ont accès à toutes les données de leur organisation." },
+          { icon: "message", title: "Messagerie instantanée", text: "Les managers échangent directement avec les agents. Un système de modération du vocabulaire inapproprié veille à la bonne qualité des discussions."},
+          { icon: "bell", title: "Notifications et alertes",  text: "Un email ou un message WhatsApp informe toutes les parties prenantes lors de certains changements d'état." },
+          { icon: "robot", title: "AIBOT IA", text: "À partir des interventions passées, l'IA vous propose celles qu'il faut prévoir. Elle analyse les données du site pour vous donner rapidement l'information recherchée." }
         ]
       %>
       <% features.each do |f| %>
@@ -76,32 +76,31 @@
     <path d="M0,0 Q300,60 600,30 Q900,0 1200,30 L1200,0 L0,0 Z" fill="#1f1f3d"/>
   </svg>
 </div>
-<section class="flex flex-col p-10 md:p-20 md:flex-row items-center gap-16">
-  <div class="flex-1 card w-full">
-    <%= image_tag "coopcoomImage.png",
-          class: "shadow rounded-2xl",
-          alt: "Tableau de bord CoopComm sur différents écrans" %>
+  <section class="flex flex-col p-10 md:p-20 md:flex-row items-center gap-16">
+    <div class="flex-1 card w-full">
+      <%= image_tag "imagecc.jpg",
+            class: "shadow rounded-2xl",
+            alt: "Tableau de bord CoopComm sur différents écrans" %>
+    </div>
+    <div class="flex-1 order-1 lg:order-2">
+      <h3 class="text-[#51c7fd] font-black mb-4 uppercase tracking-[0.2em] text-sm">Pourquoi Aïkku CoopComm ?</h3>
+      <h2 class="text-4xl lg:text-5xl mb-8 leading-tight text-secondary">
+        Une solution complète pour votre intercommunalité
+      </h2>
+      <p class="text-lg text-gray-600 mb-8 leading-relaxed text-justify">
+        Réduisez vos coûts, améliorez l'efficacité de vos équipes et garantissez une 
+        <span class="font-semibold">souveraineté numérique 100 % française</span>. Notre plateforme assure la conformité RGPD 
+        tout en offrant une expérience utilisateur fluide pour tous les agents.
+      </p>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <% ["Réduction des coûts", "Conformité RGPD", "Efficacité terrain", "Support français"].each do |item| %>
+          <li class="flex items-center gap-3 font-bold text-secondary">
+            <%= icon("cercle-check", class: "w-6 h-6 text-[#51c7fd] ") %></i>
+          <%= item %>
+        </li>
+      <% end %>
+    </ul>
   </div>
-  <div class="flex-1 order-1 lg:order-2">
-    <h3 class="text-[#51c7fd] font-black mb-4 uppercase tracking-[0.2em] text-sm">Pourquoi Aïkku CoopComm ?</h3>
-    <h2 class="text-4xl lg:text-5xl mb-8 leading-tight text-secondary">
-      Une solution complète pour votre intercommunalité
-    </h2>
-    <p class="text-lg text-gray-600 mb-8 leading-relaxed text-justify">
-      Réduisez vos coûts, améliorez l'efficacité de vos équipes et garantissez une 
-      <span class="font-semibold">souveraineté numérique 100 % française</span>. Notre plateforme assure la conformité RGPD 
-      tout en offrant une expérience utilisateur fluide pour tous les agents.
-    </p>
-    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      <% ["Réduction des coûts", "Conformité RGPD", "Efficacité terrain", "Support français"].each do |item| %>
-        <li class="flex items-center gap-3 font-bold text-secondary">
-          <%= icon("cercle-check", class: "w-6 h-6 text-[#51c7fd] ") %></i>
-        <%= item %>
-      </li>
-    <% end %>
-  </ul>
-</div>
-</div>
 </section>
 <section class="max-w-5xl mx-auto p-6 mb-0 md:mb-20">
   <div id="video" class="items-center flex flex-col reveal delay-2">
@@ -109,7 +108,7 @@
       <h2 class="text-3xl font-medium text-accent mb-8">Aïkku COOPCOMM en video</h2>
     </div>
     <div class=" flex justify-center"></div>
-    <%= video_tag '/videos/aikkucoopcommFR.mp4',
+    <%= video_tag '/videos/videoCoopComm.mp4',
           controls: true,
           class: 'w-full max-w-5xl rounded-2xl shadow-2xl',
           preload: 'none',

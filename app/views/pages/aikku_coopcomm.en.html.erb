@@ -48,34 +48,15 @@
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
       <% 
         features = [
-          { icon: "boxes", title: " Asset management", text: "Track inventory and equipment loans. Manage all usage
-        of your assets during field operations. Easily locate your equipment
-        using our interactive map.
-      " },
-          { icon: "handyman", title: " Operations", text: "A service request is submitted by a member to a local team.
-        The agent goes on-site, records the information, and the member validates the intervention.
-     " },
-          { icon: "users", title: "Agents and managers", text: " Agents have limited access to data related to their operations.
-        Managers have full access to their organization’s data.
-     " },
-          { icon: "qrcode", title: "QR code tracking", text: " For recurring operations, create a template intervention and print its QR code.
-        By scanning it, the agent directly opens the intervention without manual input.
-     " },
-          { icon: "euro", title: "Budget control", text: " A management dashboard allows members and managers
-        to track key indicators in real time.
-     " },
-          { icon: "gears", title: "Workflow", text: "  Each operation moves from one state to another through predefined actions.
-        Some actions automatically trigger notifications.
-     " },
-          { icon: "message", title: "Instant messaging", text: "  A real-time communication space allows managers to directly interact
-        with agents, with built-in moderation features.
-     " },
-          { icon: "bell", title: " Notifications and alerts", text: "Certain state changes trigger email or WhatsApp notifications
-        to keep all stakeholders informed.
-    " },
-          { icon: "robot", title: "        Intervention forecasting (AI)", text: " Based on previous operations, artificial intelligence
-        suggests upcoming interventions to plan.
-      " }
+          { icon: "euro", title: "Budget Management", text: "A dashboard enables members and managers to monitor their key performance indicators and track financial performance." },
+          { icon: "handyman", title: "Interventions", text: "Members submit requests, while the local team carries out and records the intervention. Once completed, the member can validate the intervention or provide feedback." },
+          { icon: "qrcode", title: "QR Codes", text: "For recurring interventions, generate a QR code from an intervention template. Scanning the code starts the assignment, while a second scan automatically marks it as completed." },
+          { icon: "boxes", title: "Asset Management", text: "Track inventory and equipment loans, with a complete record of each item's use during interventions. The system prevents interventions from being assigned to unavailable agents." },
+          { icon: "gears", title: "Workflow", text: "Each intervention progresses through predefined statuses based on configured actions. Certain status changes can automatically trigger notifications." },
+          { icon: "users", title: "Agents & Managers", text: "Agents only have access to their assigned interventions, while managers can access all data within their organization." },
+          { icon: "message", title: "Instant Messaging", text: "Managers can communicate directly with agents through instant messaging. An integrated content moderation system helps maintain appropriate and professional communication." },
+          { icon: "bell", title: "Notifications & Alerts", text: "Email or WhatsApp notifications keep all relevant stakeholders informed when specific intervention statuses or events change." },
+          { icon: "robot", title: "AI AIBOT", text: "Based on historical intervention data, AI recommends upcoming interventions that may need to be scheduled. It also analyzes site data to quickly provide the information you need." }
         ]
       %>
       <% features.each do |f| %>
@@ -101,13 +82,13 @@
 </div>
 <section class="flex flex-col p-10 md:p-20 md:flex-row items-center gap-16">
   <div class="flex-1 card w-full">
-    <%= image_tag "coopcoomImage.png",
+        <%= image_tag "imagecc.jpg",
           class: "shadow rounded-2xl",
           alt: "CoopComm dashboard across multiple devices" %>
   </div>
   <div class="flex-1 order-1 lg:order-2">
     <h3 class="text-[#51c7fd] font-black mb-4 uppercase tracking-[0.2em] text-sm">
-Why Aïkku CoopComm?
+      Why Aïkku CoopComm?
     </h3>
     <h2 class="text-4xl lg:text-5xl  mb-8 leading-tight text-secondary">
       A complete solution for your inter-municipal organization
@@ -134,7 +115,7 @@ Why Aïkku CoopComm?
       <h2 class="text-3xl font-medium text-accent mb-8">Aïkku PLANN video</h2>
     </div>
     <div class=" flex justify-center"></div>
-    <%= video_tag '/videos/aikkucoopcommEN.mp4',
+    <%= video_tag '/videos/videoCoopComm.mp4',
           controls: true,
           class: 'w-full max-w-5xl rounded-2xl shadow-2xl',
           preload: 'none',
