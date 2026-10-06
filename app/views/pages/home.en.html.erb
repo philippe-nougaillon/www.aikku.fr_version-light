@@ -212,9 +212,7 @@
 <section id="salon-des-maires" class="w-full bg-info text-white px-6 py-16 md:px-20 md:py-20">
   <h2 class="text-3xl lg:text-5xl text-center mb-12">
     Meet us at the 
-    <a href="https://www.salondesmaires.com/" target="_blank" rel="noopener noreferrer" class="hover:underline underline-offset-4 decoration-white/50">
       <span class="text-gradient">Salon des Maires</span>
-    </a> 
     from November 24 to 26
   </h2>
 
@@ -243,7 +241,15 @@
       </p>
       
       <div class="mt-6 font-medium text-primary">
-        We look forward to seeing you there!
+        Looking forward to seeing you there!
+        <br>
+        <%= link_to "https://www.salondesmaires.com/",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              class: "inline-flex items-center gap-1 underline-offset-4 hover:underline transition-all" do %>
+          Learn more
+          <span aria-hidden="true">↗</span>
+        <% end %>
       </div>
     </div>
 
