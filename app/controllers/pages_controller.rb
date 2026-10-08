@@ -9,7 +9,7 @@ class PagesController < ApplicationController
   def aikku_plann
   end
 
-  def aikku_coopcomm
+  def coopcomm
 
     if params[:locale]=="fr"
       @features = [
