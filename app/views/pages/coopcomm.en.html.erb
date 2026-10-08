@@ -46,48 +46,8 @@
       </p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-      <% 
-        features = [
-        { 
-          icon: "euro", 
-          title: "Budget Management", 
-          text: "A dedicated dashboard enables members and managers to track key metrics, ensuring full transparency between the intercommunal body (EPCI) and its members." 
-        },
-        { 
-          icon: "handyman", 
-          title: "Service Requests & Interventions", 
-          text: "Field agents record their interventions on site. Members can submit service requests and review/validate them upon completion." 
-        },
-        { 
-          icon: "qrcode", 
-          title: "QR Code Dispatch", 
-          text: "Generate QR codes from templates for recurring tasks. Scanning a code automatically logs the start and end of a mission." 
-        },
-        { 
-          icon: "boxes", 
-          title: "Asset Management", 
-          text: "Track inventory, equipment loans, and usage history across interventions. Automatically prevents task assignments to absent personnel." 
-        },
-        { 
-          icon: "gears", 
-          title: "Automated Workflows", 
-          text: "Interventions transition through predefined statuses, triggering automated notifications at key stages." 
-        },
-        { 
-          icon: "users", 
-          title: "Knowledge Base & Documentation", 
-          text: "A secure central repository for managers to share documents, complete with a built-in blog, role-based user guides, and FAQs." 
-        },
-        { 
-          icon: "message", 
-          title: "Instant Messaging", 
-          text: "Facilitates direct communication among managers, agents, and members within shared services, featuring automated content moderation." 
-        },
-        { icon: "bell", title: "CRM Solution", text: "A comprehensive CRM solution managing the complete sales lifecycle from quote generation to invoicing. Features native electronic signatures, service catalog, and contract management." },
-        { icon: "robot", title: "AIBOT AI", text: "Chat with your AI agent to analyze your data and quickly get the precise answers you need." }
-      ]
-      %>
-      <% features.each do |f| %>
+      
+      <% @features.each do |f| %>
         <div class="group p-10 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#51c7fd]/50 transition-all duration-300">
           <div class="flex flex-row  items-center gap-2 mb-2">
             <div class="w-14 h-14 flex items-center justify-center rounded-2xl bg-[#51c7fd]/10 group-hover:scale-110 group-hover:bg-[#51c7fd] transition-all duration-300">
@@ -110,7 +70,7 @@
 </div>
 <section class="flex flex-col p-10 md:p-20 md:flex-row items-center gap-16">
   <div class="flex-1 card w-full">
-        <%= image_tag "imagecc.jpg",
+    <%= image_tag "coopcoomImage.avif",
           class: "shadow rounded-2xl",
           alt: "CoopComm dashboard across multiple devices" %>
   </div>
